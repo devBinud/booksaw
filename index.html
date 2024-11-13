@@ -48,16 +48,22 @@
 
   <header id="header" class="header d-flex align-items-center">
  
-    <div class="custom-container position-relative d-flex align-items-center">
+    <div class="custom-container position-relative d-flex align-items-center justify-content-around">
 
     
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
+      <a href="index.html" class="logo d-flex align-items-center mr-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/main-logo.png" alt="">
         <!-- <h1 class="sitename">FlexStart</h1> -->
       </a>
 
+      <form class="d-flex" style="width: 450px; position: relative;">
+        <input class="form-control me-2 search-input shadow-none" type="search"
+          placeholder="Search books, Authors, Publishers, ISBN No..." aria-label="Search">
+        <i class="bi bi-search search-icon"></i> <!-- Bootstrap search icon -->
+      </form>
+      
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home<br></a></li>
@@ -110,7 +116,7 @@
           <li><a href="#contact">Contact</a></li>
 
           <div class="navbar__button">
-            <button class="btn-sign-in me-2">
+            <button class="btn-sign-in me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
               <i class="bi bi-person"></i> Sign In
             </button>
             <button class="btn-cart">
@@ -121,7 +127,30 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header" style="border: none;">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+ 
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h2>Hello!</h2>
+        <p style="font-size: 13.5px;color: rgb(107, 108, 109);">Please enter your contact details to Sign up or Sign in</p>
+        <form>
+          <div class="mb-3">
+            <label for="phoneNumber" class="form-label" style="font-size: 13.5px;font-weight: 600;color: rgb(107, 108, 109);">Enter Phone Number</label>
+            <input type="tel" class="form-control" id="phoneNumber" placeholder="e.g. +1234567890" required>
+          </div>
+          <button type="button" class="btn w-100 py-2 mb-3" style="background-color: #c23838; color: #fff;">Get OTP</button>
+        </form>
+      </div>
+   
+    </div>
+  </div>
+</div>
     </div>
   </header>
 

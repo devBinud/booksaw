@@ -1,0 +1,502 @@
+.cart__iconMobileView{
+    margin: 0 8px;
+}
+.cart__iconMobileView{
+    font-size: 18px;
+    color: #242121;
+    margin-right:9px;
+}
+.heart__iconMobileView{
+    font-size: 18px;
+    margin-right: -0px;
+    color: #242121;
+}
+.person__iconMobileView{
+    font-size: 21px;
+    color: #242121;
+}
+.button__cart{
+    border: none;
+    background-color: transparent;
+}
+/*--------------------------------------------------------------
+# Login CSS
+--------------------------------------------------------------*/
+
+.login__container{
+  margin: 70px 0;
+}
+
+.login__containerLeft h5{
+    font-family: "Roboto Slab", serif;
+    color: rgb(65, 63, 63);
+}
+
+.login__containerLeft p{
+    font-family: "Roboto Slab", serif;
+    color: rgb(86, 84, 84);
+}
+
+.login__icons{
+    width: 60px;
+    height: 60px;
+}
+.loginLeft__boxes{
+    margin-top: 35px;
+}
+.loginLeft__boxes p{
+    font-size: 14px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: rgb(86, 84, 84);
+}
+.login__containerRight h3{
+    font-family: "Roboto Slab", serif;
+    font-weight: 500;
+    text-align: left;
+}
+.login__containerRight p{
+    font-size: 13.5px;
+    color: rgb(80, 79, 77);
+    text-align: left;
+    margin-bottom: 20px;
+}
+.login__button{
+    width: 100%;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    background-color: #c23838;
+    color: #fff;
+    font-weight: 600;
+}
+.login__button:hover{
+    background-color: #8c2121;
+}
+.floating__inputField{
+    border: 1px solid #d3d3d3;
+    font-weight: 600;
+}
+.floating__inputField:focus{
+    border: 1px solid #242323;
+}
+.floating__titleLogin{
+    font-size: 13px;
+    color: rgb(107, 108, 110);
+}
+.breadcrumb__home{
+    color: rgb(107, 108, 110);
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 2px;
+}
+.active__breadcrumb{
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+}
+
+
+/*--------------------------------------------------------------
+# COUPON MODAL CSS
+--------------------------------------------------------------*/
+
+.coupon-input-group {
+    display: flex;
+    align-items: center;
+    margin-top: 15px; /* Adjust spacing if needed */
+}
+
+.coupon-input-group input {
+    flex: 1; /* Make the input take up the remaining width */
+    border-radius: 4px 0 0 4px; /* Rounded corners for the input */
+    border: 1px solid #ccc; /* Consistent border */
+    padding: 10px; /* Space inside the input */
+}
+
+.coupon-input-group button {
+    border-radius: 0 4px 4px 0; /* Rounded corners for the button */
+    padding: 10px 20px; /* Adjust padding for a balanced look */
+    border: 1px solid #e14646; /* Match primary color */
+    background-color: #e14646; /* Primary color for the button */
+    color: white; /* Text color for contrast */
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.coupon-input-group button:hover {
+    background-color: #c53636; /* Darker shade on hover */
+    border-color: #c53636;
+}
+
+.coupon__signIn{
+    background-color: #f4dede;
+    border: none;
+    font-size: 12px;
+    color: #363232;
+    padding: 10px;
+    font-weight: 600;
+}
+.coupon-input-group ::placeholder{
+    font-size: 14px;
+    font-weight: 600;
+}
+.apply__button{
+    border-radius: 10px;
+}
+.apply__button:hover{
+    color: #fff;
+    background-color: #c53636;
+}
+.coupons__title{
+    font-family: "Roboto Slab", serif;
+    color: #242323;
+}
+.coupon__availInstruction{
+    font-size: 13px;
+    margin-top: -10px;
+    color: #625f5f;
+}
+.breadcumb__section{
+    font-size: 10px;
+}
+/*--------------------------------------------------------------
+# CART CSS
+--------------------------------------------------------------*/
+
+.cart__container {
+    padding: 20px;
+}
+.cart__container .card {
+    border-radius: 0px;
+}
+.cart__authorName{
+    font-size: 12px;
+    color: #6c757d;
+    margin-top: -2px;
+}
+.cart__bookName{
+    font-size: 16px;
+    color: #242323;
+    font-weight: 600;
+}
+.cart__wrapper{
+    border: 1px solid #ededed;
+    border-radius: 10px;
+    margin-right: 30px;
+}
+
+.cart-item {
+    position: relative;
+    border: none;
+    padding: 0px 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.cart-item:not(:last-child) {
+    border-bottom: 1px dashed #ddd; /* Dashed line between cart items */
+    margin-top: 10px;
+}
+
+.cartSale__price {
+    color: #242323;
+    font-size: 1.01rem;
+    font-weight: 600;
+}
+.quantity__box{
+    margin-bottom: 20px;
+}
+.cartRegular__price {
+    color: #6c757d;
+    text-decoration: line-through;
+    margin-left: 2px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+.qty__text{
+    font-size: 14px;
+    font-weight: 600
+}
+.cartButton__decrement{
+    border: 1px solid #ddd;
+}
+.inc__button__icon{
+    font-size: 15px!important;
+}
+.cartButton__increment{
+    border: 1px solid #e14646;
+    background-color: #e14646;
+    color: white;
+    border-radius: 10px;
+}
+.cart__mainDiscount {
+    color: #36b957;
+    margin-left: 5px;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.quantity-input {
+    width: 50px;
+    text-align: center;
+}
+
+.remove-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.remove-button button {
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    color: #e14646;
+}
+.quantity-input {
+    width: 50px;
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+.qty__amount{
+    border: none;
+    font-weight: 600;
+    width: 30px;
+}
+.quantity-input:focus {
+    border-color: #e14646; /* Highlight border on focus */
+}
+
+.btn-outline-secondary {
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+.chevron__right{
+    width: 20px;
+    height: 20px;
+}
+.coupon__icon{
+    width: 32px;
+    height: 29px;
+}
+.apply__couponText{
+    font-size: 15px;
+    font-weight: 600;
+    color: #242323;
+    margin-left: 10px;
+}
+.btn-outline-secondary:hover {
+    border-color: #dedede;
+    color: #fff;
+}
+.cart__productImage{
+    height: 120px;
+    border-radius: 0px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 4px;
+}
+.coupon__boxCart{
+    border: 1px dashed #ddd;
+    padding-top: 10px;
+    padding-left:12px;
+    padding-right:12px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+/* Make sure the price details container takes full height */
+.price-details {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 60px; /* Make space for the fixed button */
+}
+.price__detailsText{
+    font-size: 17px;
+    padding-top: 14px;
+    border-top: 1px dotted #ddd;
+    font-weight: 600;
+    color: #242323;
+}
+.mrp__priceDiscount{
+    font-weight: 600;
+    color: #4db267;
+}
+.savedPrice{
+    background-color: rgba(250, 194, 65,0.5);
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.mrp__text{
+    font-size: 15px;
+    color: #6c757d;
+}
+.mrp__price{
+    font-weight: 600;
+}
+.cannot__note{
+    font-size: 12px;
+    color: #6c757d;;
+    margin-top: -11px;
+}
+.payment__button{
+    width: 100%;
+    background-color: #e14646;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    padding: 12px 20px;
+    border: none;
+    border-radius:10px;
+    color: #f5efef;
+}
+.payment__button:hover{
+    width: 100%;
+    background-color: #ed5656;
+}
+
+.productDetails__productName{
+    font-family: "Roboto Slab", serif;
+    color: #242323;
+    font-size: 28px;
+}
+.productDetails__author{
+    font-size: 14px;
+    color: #898282;
+}
+.productDetails__description{
+    font-size: 14.2px;
+    color: #6f6b6b;
+    line-height: 24px;
+}
+.productDetails__codinfo{
+    font-size: 12.5px;
+    color: #898282;
+    border-top: 1px dashed #ddd;
+    padding-top: 10px;
+}
+.author__aboutHeadline{
+    font-family: "Roboto Slab", serif;
+    color: #242323;
+    font-size: 28px;
+}
+/* Ensure no global bleeding */
+.product__description__authorContainer .nav-pills {
+    margin-bottom: 20px;
+    padding-left: 0;
+    border-radius: 5px;
+    background-color: transparent; /* Transparent background for the container */
+}
+
+.product__description__authorContainer .nav-item {
+    border-radius: 5px; /* Rounded corners for individual pills */
+}
+
+.product__description__authorContainer .nav-link {
+    font-size: 14px;
+    color: #6c757d; /* Gray color for inactive tabs */
+    font-weight: normal; /* Normal weight for inactive tabs */
+    border: none; /* Remove default border */
+    border-bottom: 3px solid transparent; /* Ensure no border by default */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Active tab: 10px bottom border, orange-red color, bold text */
+.product__description__authorContainer .nav-link.active {
+    background-color: transparent; /* Remove background color on active */
+    color: #6c757d; /* Orange-red text color for active */
+    font-weight: bold;
+    border-radius: 0px; /* Bold text for active */
+    border-bottom: 2px solid orangered; /* 10px wide bottom border for active tab */
+}
+.product__description__pillsDesc{
+    font-size: 14.2px;
+    color: #6f6b6b;
+    line-height: 24px;
+}
+.product__description__pillsAuthor{
+    font-weight: 600;
+}
+.inc__tax{
+    font-size: 12px!important;
+}
+/* Hover effect for inactive tabs */
+.product__description__authorContainer .nav-link:hover {
+    color: orangered; /* Change text color on hover */
+}
+
+/* Ensuring spacing between nav items */
+.product__description__authorContainer .nav-item + .nav-item {
+    margin-left: 10px; /* Space between items */
+}
+
+
+/* Mobile view styles */
+@media (max-width: 768px) {
+    /* Ensure the main content can scroll and leave space for the button */
+    .main {
+        display: flex;
+        flex-direction: column;
+        /* height: 100vh; Make the main content take full height of the screen */
+    }
+
+    /* Right side container should grow and be scrollable */
+    .price-details {
+        flex-grow: 1;
+        overflow-y: auto; /* Allow scrolling of content */
+    }
+
+    /* Fix the Proceed to Payment button at the bottom */
+    .price-details .btn {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        font-size: 16px;
+        z-index: 10; /* Ensure it's above other content */
+    }
+}
+
+/* For larger screens, no need to fix the button */
+@media (min-width: 769px) {
+    .price-details .btn {
+        position: static;
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .login__containerLeft h5{
+        display: none;
+    }
+    
+    .login__containerLeft p{
+        display: none;
+    }
+    .loginLeft__boxes{
+        display: none;
+    }
+
+    .cart__bookName {
+        font-size: 14px;
+    }
+
+    .remove-button {
+        position: absolute;
+        top: 0px;
+        color: #242323;
+        right: -10px;
+    }
+    .qty__text{
+        display: none;
+    }
+    
+}

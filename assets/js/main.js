@@ -201,3 +201,22 @@
   document.addEventListener('scroll', navmenuScrollspy);
 
 })();
+
+
+// Function to toggle visibility based on screen width
+function toggleSearchForms() {
+  const desktopSearchForm = document.getElementById('desktopSearchForm');
+  const mobileSearchForm = document.getElementById('mobileSearchForm');
+  
+  if (window.innerWidth <= 576) {
+    desktopSearchForm.style.display = 'none';
+    mobileSearchForm.style.display = 'flex';
+  } else {
+    desktopSearchForm.style.display = 'flex';
+    mobileSearchForm.style.display = 'none';
+  }
+}
+
+// Call the function on load and resize
+window.addEventListener('load', toggleSearchForms);
+window.addEventListener('resize', toggleSearchForms);

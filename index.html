@@ -18,8 +18,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900"
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
@@ -31,11 +30,11 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/custom-style.css" rel="stylesheet">
 
 </head>
 
 <body class="index-page">
-
 
   <div class="topbar">
     <div class="container" style="max-width: 1200px; width: 100%; padding: 0 15px;">
@@ -44,26 +43,19 @@
       </h4>
     </div>
   </div>
-  
 
   <header id="header" class="header d-flex align-items-center">
  
-    <div class="custom-container position-relative d-flex align-items-center justify-content-around">
-
-    
+    <div class="custom-container position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center mr-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <img src="assets/img/main-logo.png" alt="">
-        <!-- <h1 class="sitename">FlexStart</h1> -->
+        <!-- <h1 class="sitename">Booksaw</h1> -->
       </a>
 
-      <form class="d-flex" style="width: 450px; position: relative;">
-        <input class="form-control me-2 search-input shadow-none" type="search"
-          placeholder="Search books, Authors, Publishers, ISBN No..." aria-label="Search">
-        <i class="bi bi-search search-icon"></i> <!-- Bootstrap search icon -->
-      </form>
-      
+      <!-- <input type="search"> -->
+     
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="#hero" class="active">Home<br></a></li>
@@ -116,45 +108,38 @@
           <li><a href="#contact">Contact</a></li>
 
           <div class="navbar__button">
-            <button class="btn-sign-in me-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <a href="login.html" class="sign__inButton">
               <i class="bi bi-person"></i> Sign In
-            </button>
-            <button class="btn-cart">
+            </a>
+            <a class="btn-cart">
               <i class="bi bi-cart"></i> Cart
-            </button>
+            </a>
           </div>
 
         </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        <i class="mobile-nav-toggle d-xl-none bi bi-list" style="margin-top: -14px;"></i>
+
+
       </nav>
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
-    <div class="modal-content">
-      <div class="modal-header" style="border: none;">
-        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
- 
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <h2>Hello!</h2>
-        <p style="font-size: 13.5px;color: rgb(107, 108, 109);">Please enter your contact details to Sign up or Sign in</p>
-        <form>
-          <div class="mb-3">
-            <label for="phoneNumber" class="form-label" style="font-size: 13.5px;font-weight: 600;color: rgb(107, 108, 109);">Enter Phone Number</label>
-            <input type="tel" class="form-control" id="phoneNumber" placeholder="e.g. +1234567890" required>
-          </div>
-          <button type="button" class="btn w-100 py-2 mb-3" style="background-color: #c23838; color: #fff;">Get OTP</button>
-        </form>
-      </div>
-   
+      
+    <div class="cartMobile__view">
+     <a href="#"> <i class="bi bi-heart heart__iconMobileView"></i></a>
+     <!-- <a href="#"> <i class="bi bi-cart cart__iconMobileView"></i></a> -->
+     <button type="button" class="btn-sm position-relative button__cart">
+      <i class="bi bi-cart cart__iconMobileView"></i>
+      <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="margin-left: -8px;
+    margin-top: 3px;font-size: 11px;">
+        4
+        <span class="visually-hidden">unread messages</span>
+      </span>
+    </button>
+     <a href="login.html"> <i class="bi bi-person person__iconMobileView"></i></a>
     </div>
-  </div>
-</div>
+
     </div>
   </header>
 
-  <main class="main">
+  <main class="main main__home">
 
    <!-- ======= Hero ======= -->
    <div id="hero" class="hero">
@@ -195,283 +180,310 @@
   </div>
   <!-- End Hero Section  -->
 
-     <!-- ======= Client Section starts ======= -->
-     <section id="clients" class="clients">
+     <!-- ======= New Arrivals Section starts ======= -->
+     <section id="clients" class="clients" style="margin-top: -30px;">
       <div class="container" data-aos="fade-up">
         <h3 class="title__ofHomepage mb-3">New Arrivals</h3>
 
         <div class="row">
           <div class="col-lg-2 col-6 mt-3">
             <div class="clients__single">
-              <div class="card" style="border: none!important;;">
-                <img src="assets/img/product-item1.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Simple way of peace...</h5>
-                  <h5 class="card-author">Roeds Corps</h5>
-                  <h5 class="card-price">₹349</h5>
+               <a href="product-details.html">
+                <div class="card" style="border: none!important;;">
+                  <img src="assets/img/product-item1.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Simple way of peace...</h5>
+                    <h5 class="card-author">Roeds Corps</h5>
+                   <div class="price__box d-flex">
+                    <p class="sale__price">₹349</p>
+                    <p class="regular__price">₹349</p>
+                    <p class="discount__price">(-20%)</p>
+                   </div>
+                  </div>
+                  <div class="card-buttons">
+                    <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="addToCart__buttonText">Add to Cart</a>
+                  </div>
                 </div>
-                <div class="card-buttons">
-                  <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                  <a target="_blank" href="product-details.html" class="addToCart__buttonText">Add to Cart</a>
-                </div>
-              </div>
+               </a>
             </div>
 
           </div>
           <div class="col-lg-2 col-6 mt-3">
             <div class="clients__single">
-              <div class="card" style="border: none!important;;">
-                <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Great Travel at Desert</h5>
-                  <h5 class="card-author">Riman Watson</h5>
-                  <h5 class="card-price">₹199</h5>
+               <a href="product-details.html">
+                <div class="card" style="border: none!important;;">
+                  <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Simple way of peace...</h5>
+                    <h5 class="card-author">Roeds Corps</h5>
+                   <div class="price__box d-flex">
+                    <p class="sale__price">₹349</p>
+                    <p class="regular__price">₹349</p>
+                    <p class="discount__price">(-20%)</p>
+                   </div>
+                  </div>
+                  <div class="card-buttons">
+                    <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                    <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+                  </div>
                 </div>
-                <div class="card-buttons">
-                  <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                  <a href="" class="addToCart__buttonText">Add to Cart</a>
-                </div>
-              </div>
+               </a>
             </div>
 
           </div>
           <div class="col-lg-2 col-6 mt-3">
             <div class="clients__single">
-              <div class="card" style="border: none!important;;">
-                <img src="assets/img/product-item3.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">The Lady Beauty Scarlett</h5>
-                  <h5 class="card-author">Anushka Doe</h5>
-                  <h5 class="card-price">₹419</h5>
+               <a href="product-details.html">
+                <div class="card" style="border: none!important;;">
+                  <img src="assets/img/product-item3.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Simple way of peace...</h5>
+                    <h5 class="card-author">Roeds Corps</h5>
+                   <div class="price__box d-flex">
+                    <p class="sale__price">₹349</p>
+                    <p class="regular__price">₹349</p>
+                    <p class="discount__price">(-20%)</p>
+                   </div>
+                  </div>
+                  <div class="card-buttons">
+                    <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="addToCart__buttonText">Add to Cart</a>
+                  </div>
                 </div>
-                <div class="card-buttons">
-                  <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                  <a href="" class="addToCart__buttonText">Add to Cart</a>
-                </div>
-              </div>
+               </a>
             </div>
 
           </div>
           <div class="col-lg-2 col-6 mt-3">
             <div class="clients__single">
-              <div class="card" style="border: none!important;;">
-                <img src="assets/img/product-item4.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Once upon a Time</h5>
-                  <h5 class="card-author">Ravi Kumer</h5>
-                  <h5 class="card-price">₹229</h5>
+               <a href="product-details.html">
+                <div class="card" style="border: none!important;;">
+                  <img src="assets/img/product-item4.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Simple way of peace...</h5>
+                    <h5 class="card-author">Roeds Corps</h5>
+                   <div class="price__box d-flex">
+                    <p class="sale__price">₹349</p>
+                    <p class="regular__price">₹349</p>
+                    <p class="discount__price">(-20%)</p>
+                   </div>
+                  </div>
+                  <div class="card-buttons">
+                    <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="addToCart__buttonText">Add to Cart</a>
+                  </div>
                 </div>
-                <div class="card-buttons">
-                  <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                  <a href="" class="addToCart__buttonText">Add to Cart</a>
-                </div>
-              </div>
+               </a>
             </div>
 
           </div>
           <div class="col-lg-2 col-6 mt-3">
             <div class="clients__single">
-              <div class="card" style="border: none!important;;">
-                <img src="assets/img/product-item5.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Way of Happiness</h5>
-                  <h5 class="card-author">Yushra Ghoshas</h5>
-                  <h5 class="card-price">₹199</h5>
+               <a href="product-details.html">
+                <div class="card" style="border: none!important;;">
+                  <img src="assets/img/product-item5.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Simple way of peace...</h5>
+                    <h5 class="card-author">Roeds Corps</h5>
+                   <div class="price__box d-flex">
+                    <p class="sale__price">₹349</p>
+                    <p class="regular__price">₹349</p>
+                    <p class="discount__price">(-20%)</p>
+                   </div>
+                  </div>
+                  <div class="card-buttons">
+                    <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="addToCart__buttonText">Add to Cart</a>
+                  </div>
                 </div>
-                <div class="card-buttons">
-                  <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                  <a href="" class="addToCart__buttonText">Add to Cart</a>
-                </div>
-              </div>
+               </a>
             </div>
 
           </div>
           <div class="col-lg-2 col-6 mt-3">
             <div class="clients__single">
-              <div class="card" style="border: none!important;;">
-                <img src="assets/img/product-item6.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Life of Socretis</h5>
-                  <h5 class="card-author">Raem Wingson</h5>
-                  <h5 class="card-price">₹319</h5>
+               <a href="product-details.html">
+                <div class="card" style="border: none!important;;">
+                  <img src="assets/img/product-item6.jpg" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Simple way of peace...</h5>
+                    <h5 class="card-author">Roeds Corps</h5>
+                   <div class="price__box d-flex">
+                    <p class="sale__price">₹349</p>
+                    <p class="regular__price">₹349</p>
+                    <p class="discount__price">(-20%)</p>
+                   </div>
+                  </div>
+                  <div class="card-buttons">
+                    <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                    <a href="#" class="addToCart__buttonText">Add to Cart</a>
+                  </div>
                 </div>
-                <div class="card-buttons">
-                  <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                  <a href="" class="addToCart__buttonText">Add to Cart</a>
-                </div>
-              </div>
+               </a>
             </div>
 
           </div>
-
-
         </div>
       </div>
     </section>
 
 
-       <!-- ======= Client Section starts ======= -->
-       <section id="clients" class="clients" style="margin-top: -70px;">
+       <!-- ======= Our BestSeller Books Section starts ======= -->
+       <section id="clients" class="clients" style="margin-top: -68px;">
         <div class="container" data-aos="fade-down">
           <h3 class="title__ofHomepage mb-3">Our BestSeller Books</h3>
 
           <div class="row">
             <div class="col-lg-2 col-6 mt-3">
               <div class="clients__single">
-                <div class="card" style="border: none!important;;">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:142:221:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3.amazonaws.com%2Fproduct_images%2F9789355431356.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Simple way of peace...</h5>
-                    <h5 class="card-author">Simple way of peace...</h5>
-                    <h5 class="card-price">₹229</h5>
+                 <a href="product-details.html">
+                  <div class="card" style="border: none!important;;">
+                    <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Simple way of peace...</h5>
+                      <h5 class="card-author">Roeds Corps</h5>
+                     <div class="price__box d-flex">
+                      <p class="sale__price">₹349</p>
+                      <p class="regular__price">₹349</p>
+                      <p class="discount__price">(-20%)</p>
+                     </div>
+                    </div>
+                    <div class="card-buttons">
+                      <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                      <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+                    </div>
                   </div>
-                  <div class="card-buttons">
-                    <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                    <a href="" class="addToCart__buttonText">Add to Cart</a>
-                  </div>
-                </div>
+                 </a>
               </div>
   
             </div>
             <div class="col-lg-2 col-6 mt-3">
               <div class="clients__single">
-                <div class="card" style="border: none!important;;">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:142:221:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3.amazonaws.com%2Fproduct_images%2F9781786330895.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Simple way of peace...</h5>
-                    <h5 class="card-author">Simple way of peace...</h5>
-                    <h5 class="card-price">₹229</h5>
+                 <a href="product-details.html">
+                  <div class="card" style="border: none!important;;">
+                    <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Simple way of peace...</h5>
+                      <h5 class="card-author">Roeds Corps</h5>
+                     <div class="price__box d-flex">
+                      <p class="sale__price">₹349</p>
+                      <p class="regular__price">₹349</p>
+                      <p class="discount__price">(-20%)</p>
+                     </div>
+                    </div>
+                    <div class="card-buttons">
+                      <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                      <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+                    </div>
                   </div>
-                  <div class="card-buttons">
-                    <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                    <a href="" class="addToCart__buttonText">Add to Cart</a>
-                  </div>
-                </div>
+                 </a>
               </div>
   
             </div>
             <div class="col-lg-2 col-6 mt-3">
               <div class="clients__single">
-                <div class="card" style="border: none!important;;">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:142:221:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3.amazonaws.com%2Fproduct_images%2F9789355434142.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Simple way of peace...</h5>
-                    <h5 class="card-author">Simple way of peace...</h5>
-                    <h5 class="card-price">₹229</h5>
+                 <a href="product-details.html">
+                  <div class="card" style="border: none!important;;">
+                    <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Simple way of peace...</h5>
+                      <h5 class="card-author">Roeds Corps</h5>
+                     <div class="price__box d-flex">
+                      <p class="sale__price">₹349</p>
+                      <p class="regular__price">₹349</p>
+                      <p class="discount__price">(-20%)</p>
+                     </div>
+                    </div>
+                    <div class="card-buttons">
+                      <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                      <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+                    </div>
                   </div>
-                  <div class="card-buttons">
-                    <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                    <a href="" class="addToCart__buttonText">Add to Cart</a>
-                  </div>
-                </div>
+                 </a>
               </div>
   
             </div>
             <div class="col-lg-2 col-6 mt-3">
               <div class="clients__single">
-                <div class="card" style="border: none!important;;">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:309:450:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3.amazonaws.com%2Fproduct_images%2F9789388304085.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Simple way of peace...</h5>
-                    <h5 class="card-author">Simple way of peace...</h5>
-                    <h5 class="card-price">₹229</h5>
+                 <a href="product-details.html">
+                  <div class="card" style="border: none!important;;">
+                    <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Simple way of peace...</h5>
+                      <h5 class="card-author">Roeds Corps</h5>
+                     <div class="price__box d-flex">
+                      <p class="sale__price">₹349</p>
+                      <p class="regular__price">₹349</p>
+                      <p class="discount__price">(-20%)</p>
+                     </div>
+                    </div>
+                    <div class="card-buttons">
+                      <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                      <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+                    </div>
                   </div>
-                  <div class="card-buttons">
-                    <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                    <a href="" class="addToCart__buttonText">Add to Cart</a>
-                  </div>
-                </div>
+                 </a>
               </div>
   
             </div>
             <div class="col-lg-2 col-6 mt-3">
               <div class="clients__single">
-                <div class="card" style="border: none!important;;">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:309:450:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3.amazonaws.com%2Fproduct_images%2F9780143469131.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Simple way of peace...</h5>
-                    <h5 class="card-author">Simple way of peace...</h5>
-                    <h5 class="card-price">₹229</h5>
+                 <a href="product-details.html">
+                  <div class="card" style="border: none!important;;">
+                    <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Simple way of peace...</h5>
+                      <h5 class="card-author">Roeds Corps</h5>
+                     <div class="price__box d-flex">
+                      <p class="sale__price">₹349</p>
+                      <p class="regular__price">₹349</p>
+                      <p class="discount__price">(-20%)</p>
+                     </div>
+                    </div>
+                    <div class="card-buttons">
+                      <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                      <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+                    </div>
                   </div>
-                  <div class="card-buttons">
-                    <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                    <a href="" class="addToCart__buttonText">Add to Cart</a>
-                  </div>
-                </div>
+                 </a>
               </div>
   
             </div>
             <div class="col-lg-2 col-6 mt-3">
               <div class="clients__single">
-                <div class="card" style="border: none!important;;">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:309:450:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3.amazonaws.com%2Fproduct_images%2F9780140157512.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Simple way of peace...</h5>
-                    <h5 class="card-author">Simple way of peace...</h5>
-                    <h5 class="card-price">₹229</h5>
+                 <a href="product-details.html">
+                  <div class="card" style="border: none!important;;">
+                    <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Simple way of peace...</h5>
+                      <h5 class="card-author">Roeds Corps</h5>
+                     <div class="price__box d-flex">
+                      <p class="sale__price">₹349</p>
+                      <p class="regular__price">₹349</p>
+                      <p class="discount__price">(-20%)</p>
+                     </div>
+                    </div>
+                    <div class="card-buttons">
+                      <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                      <a href="cart.html" class="addToCart__buttonText">Add to Cart</a>
+                    </div>
                   </div>
-                  <div class="card-buttons">
-                    <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                    <a href="" class="addToCart__buttonText">Add to Cart</a>
-                  </div>
-                </div>
+                 </a>
               </div>
   
             </div>
-  
   
           </div>
         </div>
       </section>
   
-      <!-- ======= Featured Services Section ======= -->
-      <section id="featured-services" class="featured-services">
-        <div class="container" data-aos="fade-up">
-          <h3 class="title__ofHomepage mb-3">Diwali Collections</h3>
-          <div class="row mx-auto">
-            <div class="col-md-6 col-4 col-lg-4 d-flex align-items-stretch">
-              <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="100">
-                <img src="https://bookscape-s3-bucket.s3-ap-south-1.amazonaws.com/F6C685A7AClegends_myths.jpg"
-                  class="card-img-tops" alt="...">
-              </div>
-            </div>
-  
-            <div class="col-md-6 col-4 col-lg-4 d-flex align-items-stretch">
-              <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="200">
-                <img src="https://bookscape-s3-bucket.s3-ap-south-1.amazonaws.com/F720F4EBF1mythology.jpg"
-                  class="card-img-tops" alt="...">
-              </div>
-            </div>
-  
-            <div class="col-md-6 col-4 col-lg-4 d-flex align-items-stretch">
-              <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="300">
-                <img src="https://bookscape-s3-bucket.s3-ap-south-1.amazonaws.com/A05C24AD75festive_flavours.jpg"
-                  class="card-img-tops" alt="...">
-              </div>
-            </div>
-          </div>
-  
-        </div>
-      </section><!-- End Featured Services Section -->
-  
-      <!-- ======= Featured Services Section ======= -->
-      <section id="featured-services" class="featured-services">
+      <!-- ======= Editors Picks Services Section ======= -->
+      <section id="featured-services" class="featured-services" style="margin-top: -70px;">
         <div class="container" data-aos="fade-up">
           <h3 class="title__ofHomepage mb-3">Editors Picks</h3>
           <div class="row">
-            <div class="col-md-6 col-4 col-lg-3 d-flex align-items-stretch">
+            <div class="col-md-6 col-6 col-lg-3 d-flex align-items-stretch">
               <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="100">
                 <img
                   src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F849C6901D1-youngadult-tile.jpg"
@@ -482,7 +494,7 @@
               </div>
             </div>
   
-            <div class="col-md-6 col-4 col-lg-3 d-flex align-items-stretch">
+            <div class="col-md-6 col-6 col-lg-3 d-flex align-items-stretch">
               <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="200">
                 <img
                   src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F97063F99EBling_murder-tile.jpg"
@@ -493,7 +505,7 @@
               </div>
             </div>
   
-            <div class="col-md-6 col-4 col-lg-3 d-flex align-items-stretch">
+            <div class="col-md-6 col-6 mt-4 mt-lg-0 col-lg-3 d-flex align-items-stretch">
               <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="300">
                 <img
                   src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F8364327E533-nostalgic-tile.jpg"
@@ -504,7 +516,7 @@
               </div>
             </div>
   
-            <div class="col-md-6 col-4 col-lg-3 d-flex align-items-stretch">
+            <div class="col-md-6 col-6 mt-4 mt-lg-0  col-lg-3 d-flex align-items-stretch">
               <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="400">
                 <img
                   src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F110912375Ee_brave_new-tile.jpg"
@@ -521,147 +533,170 @@
       </section><!-- End Featured Services Section -->
   
       <!-- Features Section - Home Page -->
-      <section id="features" class="features">
+      <section id="features" style="margin-top: -70px;" class="features">
         <div class="container">
           <div class="col-lg-12 d-flex align-items-center features-img-bg" data-aos="zoom-out">
             <img src="assets/img/sliders/banner-3.jpg" class="img-fluid" alt="about-img">
           </div>
-        </div>
+        </div>  
   
       </section><!-- End Features Section -->
   
   
-      <!-- ======= Client Section starts ======= -->
+      <!-- ======= Short Self Help Section starts ======= -->
       <section id="clients" class="clients" style="margin-top: -60px;">
         <div class="container" data-aos="fade-up">
           <h3 class="title__ofHomepage">Short Self-Help Books</h3>
           <div class="row">
             <div class="col-lg-2 col-6 mt-3">
               <div class="clients__single">
-                <div class="card" style="border: none!important;;">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:142:221:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3.amazonaws.com%2Fproduct_images%2F9789355431356.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Simple way of peace...</h5>
-                    <h5 class="card-author">Simple way of peace...</h5>
-                    <h5 class="card-price">₹229</h5>
+                 <a href="product-details.html">
+                  <div class="card" style="border: none!important;;">
+                    <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Simple way of peace...</h5>
+                      <h5 class="card-author">Roeds Corps</h5>
+                     <div class="price__box d-flex">
+                      <p class="sale__price">₹349</p>
+                      <p class="regular__price">₹349</p>
+                      <p class="discount__price">(-20%)</p>
+                     </div>
+                    </div>
+                    <div class="card-buttons">
+                      <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                      <a href="cart.html" class="addToCart__buttonText">Add to Cart</a>
+                    </div>
                   </div>
-                  <div class="card-buttons">
-                    <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                    <a href="" class="addToCart__buttonText">Add to Cart</a>
-                  </div>
-                </div>
+                 </a>
               </div>
   
             </div>
             <div class="col-lg-2 col-6 mt-3">
               <div class="clients__single">
-                <div class="card" style="border: none!important;;">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:142:221:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3.amazonaws.com%2Fproduct_images%2F9781786330895.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Simple way of peace...</h5>
-                    <h5 class="card-author">Simple way of peace...</h5>
-                    <h5 class="card-price">₹229</h5>
+                 <a href="product-details.html">
+                  <div class="card" style="border: none!important;;">
+                    <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Simple way of peace...</h5>
+                      <h5 class="card-author">Roeds Corps</h5>
+                     <div class="price__box d-flex">
+                      <p class="sale__price">₹349</p>
+                      <p class="regular__price">₹349</p>
+                      <p class="discount__price">(-20%)</p>
+                     </div>
+                    </div>
+                    <div class="card-buttons">
+                      <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                      <a href="cart.html" class="addToCart__buttonText">Add to Cart</a>
+                    </div>
                   </div>
-                  <div class="card-buttons">
-                    <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                    <a href="" class="addToCart__buttonText">Add to Cart</a>
-                  </div>
-                </div>
+                 </a>
               </div>
   
             </div>
             <div class="col-lg-2 col-6 mt-3">
               <div class="clients__single">
-                <div class="card" style="border: none!important;;">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:142:221:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3.amazonaws.com%2Fproduct_images%2F9789355434142.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Simple way of peace...</h5>
-                    <h5 class="card-author">Simple way of peace...</h5>
-                    <h5 class="card-price">₹229</h5>
+                 <a href="product-details.html">
+                  <div class="card" style="border: none!important;;">
+                    <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Simple way of peace...</h5>
+                      <h5 class="card-author">Roeds Corps</h5>
+                     <div class="price__box d-flex">
+                      <p class="sale__price">₹349</p>
+                      <p class="regular__price">₹349</p>
+                      <p class="discount__price">(-20%)</p>
+                     </div>
+                    </div>
+                    <div class="card-buttons">
+                      <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                      <a href="cart.html" class="addToCart__buttonText">Add to Cart</a>
+                    </div>
                   </div>
-                  <div class="card-buttons">
-                    <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                    <a href="" class="addToCart__buttonText">Add to Cart</a>
-                  </div>
-                </div>
+                 </a>
               </div>
   
             </div>
             <div class="col-lg-2 col-6 mt-3">
               <div class="clients__single">
-                <div class="card" style="border: none!important;;">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:309:450:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3.amazonaws.com%2Fproduct_images%2F9789388304085.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Simple way of peace...</h5>
-                    <h5 class="card-author">Simple way of peace...</h5>
-                    <h5 class="card-price">₹229</h5>
+                 <a href="product-details.html">
+                  <div class="card" style="border: none!important;;">
+                    <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Simple way of peace...</h5>
+                      <h5 class="card-author">Roeds Corps</h5>
+                     <div class="price__box d-flex">
+                      <p class="sale__price">₹349</p>
+                      <p class="regular__price">₹349</p>
+                      <p class="discount__price">(-20%)</p>
+                     </div>
+                    </div>
+                    <div class="card-buttons">
+                      <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                      <a href="cart.html" class="addToCart__buttonText">Add to Cart</a>
+                    </div>
                   </div>
-                  <div class="card-buttons">
-                    <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                    <a href="" class="addToCart__buttonText">Add to Cart</a>
-                  </div>
-                </div>
+                 </a>
               </div>
   
             </div>
             <div class="col-lg-2 col-6 mt-3">
               <div class="clients__single">
-                <div class="card" style="border: none!important;;">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:309:450:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3.amazonaws.com%2Fproduct_images%2F9780143469131.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Simple way of peace...</h5>
-                    <h5 class="card-author">Simple way of peace...</h5>
-                    <h5 class="card-price">₹229</h5>
+                 <a href="product-details.html">
+                  <div class="card" style="border: none!important;;">
+                    <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Simple way of peace...</h5>
+                      <h5 class="card-author">Roeds Corps</h5>
+                     <div class="price__box d-flex">
+                      <p class="sale__price">₹349</p>
+                      <p class="regular__price">₹349</p>
+                      <p class="discount__price">(-20%)</p>
+                     </div>
+                    </div>
+                    <div class="card-buttons">
+                      <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                      <a href="cart.html" class="addToCart__buttonText">Add to Cart</a>
+                    </div>
                   </div>
-                  <div class="card-buttons">
-                    <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                    <a href="" class="addToCart__buttonText">Add to Cart</a>
-                  </div>
-                </div>
+                 </a>
               </div>
   
             </div>
             <div class="col-lg-2 col-6 mt-3">
               <div class="clients__single">
-                <div class="card" style="border: none!important;;">
-                  <img
-                    src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:309:450:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3.amazonaws.com%2Fproduct_images%2F9780140157512.jpg"
-                    class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Simple way of peace...</h5>
-                    <h5 class="card-author">Simple way of peace...</h5>
-                    <h5 class="card-price">₹229</h5>
+                 <a href="product-details.html">
+                  <div class="card" style="border: none!important;;">
+                    <img src="assets/img/product-item2.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Simple way of peace...</h5>
+                      <h5 class="card-author">Roeds Corps</h5>
+                     <div class="price__box d-flex">
+                      <p class="sale__price">₹349</p>
+                      <p class="regular__price">₹349</p>
+                      <p class="discount__price">(-20%)</p>
+                     </div>
+                    </div>
+                    <div class="card-buttons">
+                      <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+                      <a href="cart.html" class="addToCart__buttonText">Add to Cart</a>
+                    </div>
                   </div>
-                  <div class="card-buttons">
-                    <a href="" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                    <a href="" class="addToCart__buttonText">Add to Cart</a>
-                  </div>
-                </div>
+                 </a>
               </div>
   
             </div>
-  
   
           </div>
         </div>
       </section>
   
-      <!-- ======= Featured Services Section ======= -->
-      <section id="featured-services" class="featured-services" style="margin-top: -30px;">
+      <!-- ======= Top Exam Prep Section ======= -->
+      <section id="featured-services" class="featured-services" style="margin-top: -70px;">
         <div class="container" data-aos="fade-up">
           <h4 class="mb-4 title__ofHomepage">Top Exam Prep</h4>
           <div class="row">
-            <div class="col-md-6 col-4 col-lg-3 d-flex align-items-stretch">
+            <div class="col-md-6 col-6 col-lg-3 d-flex align-items-stretch">
               <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="100">
                 <img
                   src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F06509D69C4UPSC.jpg"
@@ -672,7 +707,7 @@
               </div>
             </div>
   
-            <div class="col-md-6 col-4 col-lg-3 d-flex align-items-stretch">
+            <div class="col-md-6 col-6 col-lg-3 d-flex align-items-stretch">
               <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="200">
                 <img
                   src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F537CAA5522ICSE.jpg"
@@ -683,7 +718,7 @@
               </div>
             </div>
   
-            <div class="col-md-6 col-4 col-lg-3 d-flex align-items-stretch">
+            <div class="col-md-6 col-6 mt-4 mt-lg-0 col-lg-3 d-flex align-items-stretch">
               <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="300">
                 <img
                   src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2F81E8FBA1B8CBSC.jpg"
@@ -694,7 +729,7 @@
               </div>
             </div>
   
-            <div class="col-md-6 col-4 col-lg-3 d-flex align-items-stretch">
+            <div class="col-md-6 col-6 mt-4 mt-lg-0 col-lg-3 d-flex align-items-stretch">
               <div class="card" style="border: none!important;" data-aos="fade-up" data-aos-delay="400">
                 <img
                   src="https://d34a0mln2492j4.cloudfront.net/unsigned/resize:fit:393:260:0/gravity:sm/plain/https%3A%2F%2Fbookscape-s3-bucket.s3-ap-south-1.amazonaws.com%2FDD08C2EDBCIIT_JEE.jpg"
@@ -712,7 +747,7 @@
   
   
       <!-- Features Section - Home Page -->
-      <section id="features" class="features">
+      <section id="features" style="margin-top: -60px;" class="features">
         <div class="container">
           <div class="col-lg-12 d-flex align-items-center features-img-bg" data-aos="zoom-out">
             <img src="assets/img/sliders/banner-3.jpg" class="img-fluid" alt="about-img">
@@ -720,7 +755,6 @@
         </div>
   
       </section><!-- End Features Section -->
-
 
   </main>
 
@@ -730,7 +764,7 @@
       <div class="row gy-4">
       
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-6 col-md-3 footer-links">
           <h4>Top Genre</h4>
             <ul>
               <li><a href="#">Academics</a></li>
@@ -742,7 +776,7 @@
             </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-6 col-md-3 footer-links">
           <h4>Quick Links</h4>
             <ul>
               <li><a href="#">BestSellers</a></li>
@@ -754,7 +788,7 @@
             </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-6 col-md-3 footer-links">
           <h4>Help & Support</h4>
             <ul>
               <li><a href="#">Order Tracking</a></li>
@@ -766,7 +800,7 @@
             </ul>
         </div>
 
-        <div class="col-lg-2 col-md-3 footer-links">
+        <div class="col-lg-2 col-md-3 col-6 footer-links">
           <h4>Top Publishers</h4>
           <ul>
             <li><a href="#">Penguin Random House</a></li>
@@ -804,31 +838,30 @@
 
         </div>
 
-
       </div>
     </div>
 
     <div class="container footer__bottom__one">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="footer__bottom__smallBox">
             <img src="https://bookscape.com/_next/static/media/geniue_books.38fcecb3.svg" alt="">
             <h6>Millions of books</h6>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="footer__bottom__smallBox">
             <img src="https://bookscape.com/_next/static/media/geniue_books.38fcecb3.svg" alt="">
             <h6>Millions of books</h6>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="footer__bottom__smallBox">
             <img src="https://bookscape.com/_next/static/media/geniue_books.38fcecb3.svg" alt="">
             <h6>Millions of books</h6>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-6">
           <div class="footer__bottom__smallBox">
             <img src="https://bookscape.com/_next/static/media/geniue_books.38fcecb3.svg" alt="">
             <h6>Millions of books</h6>
@@ -840,11 +873,11 @@
     <div class="container copyright text-center mt-4">
       <div class="credits">
         <p class="creditss">Designed and Developed by <a href="https://noobcodeacademy.in/">Noob Code Academy</a></p>
-        <p class="copyRightt">Copyright © 2024 by Bookscape India</p>
+        <p class="copyRightt">Copyright © 2024 by Booksaw India</p>
       </div>
     </div>
   
-    <div class="footer__bottom__two">
+    <div class="footer__bottom__two d-none d-lg-block">
       <div class="container">
         <div class="row">
   

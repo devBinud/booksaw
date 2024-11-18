@@ -20,6 +20,100 @@
     background-color: transparent;
 }
 /*--------------------------------------------------------------
+# SEARCH BOX CSS
+--------------------------------------------------------------*/
+
+.search-container {
+    position: relative;
+    width: 100%;
+    display: block;
+    margin-left: 50px;
+  }
+  
+  .search-input {
+    width: 70%;
+    padding: 10px 30px 10px 20px; /* Space for the icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #d75656; /* Focus border color */
+    box-shadow: 0 0 5px rgba(239, 107, 81, 0.5); /* Optional focus shadow */
+  }
+  
+  .search-input:hover {
+    border-color: #d75656; /* Hover border color */
+  }
+  
+  .search-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #ccc; /* Default icon color */
+    font-size: 20px;
+    transition: color 0.3s ease;
+  }
+  
+  .search-input:focus + .search-icon {
+    color: #d75656; /* Icon color when focused */
+  }
+  
+  .search-input:hover + .search-icon {
+    color: #d75656; /* Icon color on hover */
+  }
+  
+
+  .search-container-two {
+    position: relative;
+    display: none;
+    width: 100%;
+    max-width: 400px; /* Optional, sets a max-width for the search box */
+  }
+  
+  .search-input-two {
+    width: 100%;
+    padding: 12px 25px 12px 35px; /* Space for the icon */
+    border: 2px solid #ddd;
+    border-radius: 50px;
+    font-size: 16px;
+    outline: none;
+    background-color: #f7f7f7; /* Light background */
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .search-input-two:focus {
+    border-color: #28a745; /* Focus border color */
+    background-color: #ffffff; /* White background on focus */
+  }
+  
+  .search-input-two:hover {
+    border-color: #28a745; /* Hover border color */
+  }
+  
+  .search-icon-two {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #aaa; /* Default icon color */
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+  
+  .search-input-two:focus + .search-icon-two {
+    color: #28a745; /* Icon color on focus */
+  }
+  
+  .search-input-two:hover + .search-icon-two {
+    color: #28a745; /* Icon color on hover */
+  }
+  
+/*--------------------------------------------------------------
 # Login CSS
 --------------------------------------------------------------*/
 
@@ -498,5 +592,26 @@
     .qty__text{
         display: none;
     }
+
+    .search-container{
+        display: none;
+    }
+    .search-container-two{
+        display: block;
+        max-width: 370px;
+        margin: auto;
+        
+    }
+    .search-input-two {
+        width: 100%;
+        padding: 8px 18px 8px 20px; /* Space for the icon */
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        font-size: 13px;
+        outline: none;
+        background-color: #f7f7f7; /* Light background */
+        transition: border-color 0.3s ease, background-color 0.3s ease;
+      }
     
 }

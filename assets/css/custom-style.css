@@ -1,3 +1,141 @@
+/* SEARCH CONTAINER  */
+.logo__loginPage{
+
+}
+
+/* ORDER SUCCESSFULL  */
+
+.section__fillGap__orderSuccessfull{
+    /* padding-top: 150px; */
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: #fcfcfc;
+}
+
+.section__fillGap__orderSuccessfull {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f9fa; /* Light gray background */
+}
+
+.orderSuccess__box {
+    max-width: 700px;
+    background-color: #fff; /* White box */
+    border-radius: 10px;
+    text-align: center;
+}
+
+.orderSuccess__icon {
+    width: 80px;
+    height: 80px;
+}
+
+.orderSuccess__title {
+    color: #404240; /* Green color */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.orderSuccess__message {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.orderSuccess__orderID {
+    color: #333;
+    font-size: 14px;
+}
+
+.btn-success {
+    background-color: #e14646!important;
+    border-color: #e14646;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.btn-success:hover {
+    background-color: #ee4545!important;
+    border-color: #ee4545!important;
+}
+/* Done */
+.button__applyCoupon{
+    background-color: #e14646!important;
+}
+.button__applyCoupon:hover{
+    background-color: #ee4545!important;
+}
+.apply__couponTitle{
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 16px;
+    color:#242323;
+}
+.coupon__codeInput{
+    font-size: 14px;
+    color: #747171;
+    padding: 8px!important;
+}
+.payment__options {
+    background-color: #edf1f8; /* Background color for the payment options section */
+    border-radius: 8px;
+}
+
+.payment__option {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    background-color: transparent; /* Default background */
+}
+.payment__options h5 {
+    font-weight: 600;
+    font-size: 17px;
+    margin-bottom: 22px!important;
+    color: #242323;
+}
+.payment__option:hover {
+    background-color: #ccc; /* Slight hover effect */
+}
+
+.payment__option input[type="radio"]:checked ~ label {
+    background-color: #fff; /* Highlighted background for selected option */
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.payment__icon {
+    width: 30px;
+    height: 30px;
+}
+.payment__optionText{
+    font-weight: 600;
+    font-size: 15px;
+    color: #454141;
+}
+.form-check-input {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+
+/* NEWLY ADDED PRODUCT DETAILS SECTION  */
+
+.section__fillGap{
+    padding-top: 118px;
+}
+.section__fillGap__cart{
+    padding-top: 58px;
+}
+
 .cart__iconMobileView{
     margin: 0 8px;
 }
@@ -19,6 +157,150 @@
     border: none;
     background-color: transparent;
 }
+
+
+/* NEWLY ADDED CSS  */
+.details__productDescription{
+    background-color: #f9f9f9;
+    padding: 20px;
+    padding-right: 60px;
+    border-radius: 2px;
+    margin-left: -30px;
+    margin-bottom: 50px;
+}
+.details__productDescription h5{
+    font-family:"Roboto-slab";
+    font-size: 26px;
+    color: #242121;
+    margin-bottom:20px
+}
+
+.product__detailsText{
+    font-size: 14px;
+    color: #6c757d;
+}
+.details__productDescription span{
+    font-size: 14px;
+    color: #2c2f31;
+    font-weight: 600;
+}
+
+
+/* REVIEW AND RATING  */
+
+/* Star rating style */
+.star-rating {
+    display: inline-block;
+    direction: rtl;
+  }
+  
+  .star {
+    font-size: 22px;
+    color: #ffd700;
+    cursor: pointer;
+  }
+  
+  .star-rating .star:hover,
+  .star-rating .star:hover ~ .star {
+    color: #ffd700; /* Gold color on hover */
+  }
+  
+  .star-rating .star.selected {
+    color: #ffd700; /* Selected stars will stay gold */
+  }
+  
+  /* Review text */
+  .review__text {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .review__date {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  /* User profile icon */
+  .user-pf-icon {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+  }
+  
+  /* Helpful button */
+  .helpful-btn {
+    font-size: 12px;
+    color: #007bff;
+  }
+  
+  .helpful-btn i {
+    margin-right: 5px;
+  }
+  
+  .rating-count {
+    font-size: 18px;
+    font-weight: 600;
+    color: #d56363;
+    display: inline-block;
+  }
+  
+  .add__review textarea {
+    font-size: 14px;
+    color: #333;
+    border-radius: 5px;
+  }
+
+  .reviews__section h5{
+    font-family:"Roboto-slab";
+    font-size: 26px;
+    color: #242121;
+    margin-bottom:20px
+  }
+
+  .review__user{
+    font-weight: 600;
+  }
+  .add__review h6{
+    font-size: 20px;
+    color: #242121;
+    font-weight: 600;
+
+  }
+  .rating__stars{
+    border: 1px solid #dadcde;
+    display: inline-block;
+    padding: 3px 20px;
+    border-radius: 10px;
+  }
+  .no__ofReviews{
+    font-size: 18px;
+    font-weight: 600;
+    color: #242121;
+    margin-left: 5px;
+  }
+  /* Button style */
+  button {
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+
+  .reviews__section{
+    margin-left: -20px;
+  }
+
+  .button__submitReview{
+    padding: 9px 20px;
+    font-weight: 600;
+    border-radius: 6px;
+    background-color: #ef5b5b;
+    border: none;
+    color: #fff;
+  }
+  .button__submitReview:hover{
+    background-color: #ee5252;
+  }
+  
 /*--------------------------------------------------------------
 # SEARCH BOX CSS
 --------------------------------------------------------------*/
@@ -87,12 +369,12 @@
   }
   
   .search-input-two:focus {
-    border-color: #28a745; /* Focus border color */
+    border-color: #9a9d9b; /* Focus border color */
     background-color: #ffffff; /* White background on focus */
   }
   
   .search-input-two:hover {
-    border-color: #28a745; /* Hover border color */
+    border-color: #9a9d9b; /* Hover border color */
   }
   
   .search-icon-two {
@@ -181,13 +463,13 @@
 .breadcrumb__home{
     color: rgb(107, 108, 110);
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
-    margin-top: 2px;
+    margin-top: 2.5px;
 }
 .active__breadcrumb{
-    font-family: "Roboto Slab", serif;
-    font-size: 18px;
+    font-size: 14px;
+    margin-top: 3px;
 }
 
 
@@ -357,7 +639,7 @@
 .qty__amount{
     border: none;
     font-weight: 600;
-    width: 30px;
+    width: 40px;
 }
 .quantity-input:focus {
     border-color: #e14646; /* Highlight border on focus */
@@ -441,7 +723,7 @@
     margin-top: -11px;
 }
 .payment__button{
-    width: 100%;
+    width: 100%!important;
     background-color: #e14646;
     font-weight: 600;
     text-transform: uppercase;
@@ -450,10 +732,17 @@
     padding: 12px 20px;
     border: none;
     border-radius:10px;
-    color: #f5efef;
+    color: #f5efef!important;
+}
+.payment__buttonText{
+    color: #f5efef!important;
+}
+.payment__buttonText:hover{
+    color: #f5efef!important;
 }
 .payment__button:hover{
     width: 100%;
+    color: #f5efef!important;
     background-color: #ed5656;
 }
 
@@ -533,6 +822,51 @@
 }
 
 
+/* NEWLY ADDED POSITION CSS */
+
+.pincode__inputWrapper {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+}
+
+.pincode__inputBox {
+    width: 100%;
+    padding: 10px 80px 10px 15px; /* Space for button on the right */
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.pincode__inputBox:focus {
+    border-color: #96999c;
+    box-shadow: 0 0 5px rgba(208, 209, 210, 0.5);
+}
+.pincode__textDeliveryTime{
+    font-size: 13px;
+    color: #7f7f7f;
+    margin-top: 6px;
+}
+
+.pincode__button {
+    position: absolute;
+    right: 5px;
+    top: 30%;
+    transform: translateY(-50%);
+    background-color: #93b4d8;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pincode__button:hover {
+    background-color: #6fa0d1;
+}
+
 /* Mobile view styles */
 @media (max-width: 768px) {
     /* Ensure the main content can scroll and leave space for the button */
@@ -599,19 +933,91 @@
     .search-container-two{
         display: block;
         max-width: 370px;
+        position: fixed;
         margin: auto;
+        padding-top: 93px;
+        background: white;
+        z-index: 100;
         
     }
     .search-input-two {
-        width: 100%;
+        width: 95.5%;
         padding: 8px 18px 8px 20px; /* Space for the icon */
         border: 1px solid #ddd;
         border-radius: 4px;
         margin-bottom: 20px;
-        font-size: 13px;
+        margin-right: 20px;
+        font-size: 12px;
+        margin-left: 10px;
         outline: none;
         background-color: #f7f7f7; /* Light background */
         transition: border-color 0.3s ease, background-color 0.3s ease;
       }
+
+      .fixed-top {
+        position: fixed!important;
+        top: 30!important;
+        right: 0!important;
+        left: 0!important;
+        z-index: 1030!important;
+    }
+    
+
+      .navbar__button{
+        display: none;
+      }
+
+      .details__productDescription{
+        margin-left: 0px;
+    }
+    .reviews__section {
+        margin-left: 8px;
+    }
+
+    .productDetails__image{
+       margin-top: -90px;
+       margin-bottom: 20px;
+    }
+    .productDetails__productName {
+        font-size: 24px;
+        
+    }
+    .author__aboutHeadline {
+        font-size: 24px;
+        margin-bottom: 13px;
+    }
+    .details__productDescription h5 {
+        font-size: 24px;
+    }
+    .reviews__section h5 {
+        font-size: 24px;
+        margin-top: -30px;
+    }
+    .section__fillGap__cart{
+        padding-top: 78px;
+    }
+    .logo__loginPage{
+        margin-left:0!important;
+    }
+    .payment__optionText {
+    font-weight: 600;
+    font-size: 13px;
+    color: #454141;
+}
+.mrp__text {
+    font-size: 14px;
+    color: #6c757d;
+}
+.clients h3 {
+    font-size:18px; 
+    margin-top: -10px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
+.title__ofHomepage {
+    font-size:18px; 
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+}
     
 }

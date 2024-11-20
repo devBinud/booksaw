@@ -220,3 +220,76 @@ function toggleSearchForms() {
 // Call the function on load and resize
 window.addEventListener('load', toggleSearchForms);
 window.addEventListener('resize', toggleSearchForms);
+
+
+
+
+// quanity handle JS custom Added 
+
+
+// Get the elements
+const decrementBtn = document.getElementById('decrementBtn');
+const incrementBtn = document.getElementById('incrementBtn');
+const quantityInput = document.getElementById('quantityInput');
+
+// Function to update the buttons based on the quantity
+function updateButtons() {
+    const currentValue = parseInt(quantityInput.value, 10);
+
+    // Disable decrement button if the quantity is 1
+    if (currentValue <= 1) {
+        decrementBtn.disabled = true;
+    } else {
+        decrementBtn.disabled = false;
+    }
+}
+
+// Decrement functionality
+decrementBtn.addEventListener('click', function() {
+    let currentValue = parseInt(quantityInput.value, 10);
+    if (currentValue > 1) {
+        currentValue--;
+        quantityInput.value = currentValue;
+        updateButtons();
+    }
+});
+
+// Increment functionality
+incrementBtn.addEventListener('click', function() {
+    let currentValue = parseInt(quantityInput.value, 10);
+    currentValue++;
+    quantityInput.value = currentValue;
+    updateButtons();
+});
+
+// Initialize buttons on page load
+updateButtons();
+
+
+
+// search popup 
+// Show dropdown on input focus
+function showSearchList() {
+  document.getElementById("searchList").style.display = "block";
+}
+
+// Hide dropdown on input blur
+function hideSearchList() {
+  setTimeout(() => {
+      document.getElementById("searchList").style.display = "none";
+  }, 200); // Timeout to allow clicking on list items
+}
+
+// TWO SEARCH BOX 
+
+// Show dropdown on input focus
+function showSearchListTwo() {
+  document.getElementById("searchListTwo").style.display = "block";
+}
+
+  // Hide dropdown on input blur
+  function hideSearchListTwo() {
+    setTimeout(() => {
+        document.getElementById("searchListTwo").style.display = "none";
+    }, 200); // Timeout to allow clicking on list items
+  }

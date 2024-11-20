@@ -9,7 +9,7 @@
     <meta name="keywords" content="">
 
     <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/favicons.png" rel="icon">
     <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
     <!-- Fonts -->
@@ -39,23 +39,53 @@
 
 <body class="index-page">
 
-    <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="topbar">
+        <div class="container" style="max-width: 1200px; width: 100%; padding: 0 15px;">
+            <h4 class="text-neutral-100 text-center m-0">
+                Use code <span class="fw-bold">COUPON50</span> and get an offer on your purchase!
+            </h4>
+        </div>
+    </div>
 
-        <div class="custom-container position-relative d-flex align-items-center">
+    <header id="header" class="header d-flex align-items-center">
 
+        <div class="custom-container position-relative d-flex align-items-center justify-content-between">
 
-
-            <a href="index.html" class="logo d-flex align-items-center me-auto">
+            <a href="index.html" class="logo d-flex align-items-center mr-auto">
                 <!-- Uncomment the line below if you also wish to use an image logo -->
                 <img src="assets/img/main-logo.png" alt="">
-                <!-- <h1 class="sitename">FlexStart</h1> -->
+                <!-- <h1 class="sitename">Booksaw</h1> -->
             </a>
+
+            <div class="cartMobile__view">
+                <a href="#"> <i class="bi bi-heart heart__iconMobileView"></i></a>
+                <!-- <a href="#"> <i class="bi bi-cart cart__iconMobileView"></i></a> -->
+                <button type="button" class="btn-sm position-relative button__cart">
+                    <i class="bi bi-cart cart__iconMobileView"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="margin-left: -8px;
+        margin-top: 3px;font-size: 11px;">
+                        4
+                        <span class="visually-hidden">unread messages</span>
+                    </span>
+                </button>
+                <a href="login.html"> <i class="bi bi-person person__iconMobileView"></i></a>
+            </div>
 
         </div>
     </header>
 
+
+    <div class="search-container-two">
+        <input type="search" class="search-input-two" placeholder="Search books,authors,Publishers,ISBN No...">
+        <i class="search-icon-two fas fa-search"></i> <!-- Using FontAwesome icon -->
+    </div>
+
     <main class="main">
- 
+
+        <div class="section__fillGap__cart">
+
+        </div>
+
         <!-- Cart Section -->
         <div class="container my-4 cart__container">
             <div class="row">
@@ -63,8 +93,8 @@
                     <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
                         aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item breadcrumb__home"><i style="font-weight: 600;" class="bi bi-arrow-left me-2"></i><a
-                                    href="#" class="breadcrumb__home">Home</a></li>
+                            <li class="breadcrumb-item breadcrumb__home"><i style="font-weight: 600;"
+                                    class="bi bi-arrow-left me-2"></i><a href="#" class="breadcrumb__home">Home</a></li>
                             <li class="breadcrumb-item active active__breadcrumb" aria-current="page">Shopping Cart</li>
                         </ol>
                     </nav>
@@ -84,14 +114,16 @@
                                     <span class="cart__mainDiscount">(-20%)</span>
                                 </p>
                                 <div class="d-flex align-items-center quantity__box">
-                                    <span class="me-2 qty__text">Qty:</span>
-                                    <button class="btn btn-sm btn-outline-secondary cartButton__decrement">
+                                    <span class="me-2 qty__text">Quantity:</span>
+                                    <button class="btn btn-sm btn-outline-secondary cartButton__decrement"
+                                        id="decrementBtn">
                                         <i class="bi bi-dash-lg inc__button__icon"></i>
                                     </button>
                                     <input type="text"
                                         class="qty__amount form-control form-control-sm mx-2 text-center quantity-input"
-                                        value="5">
-                                    <button class="btn btn-sm btn-outline-secondary cartButton__increment">
+                                        value="3" id="quantityInput">
+                                    <button class="btn btn-sm btn-outline-secondary cartButton__increment"
+                                        id="incrementBtn">
                                         <i class="bi bi-plus-lg inc__button__icon"></i>
                                     </button>
                                 </div>
@@ -115,14 +147,16 @@
                                     <span class="cart__mainDiscount">(-20%)</span>
                                 </p>
                                 <div class="d-flex align-items-center quantity__box">
-                                    <span class="me-2 qty__text">Qty:</span>
-                                    <button class="btn btn-sm btn-outline-secondary cartButton__decrement">
+                                    <span class="me-2 qty__text">Quantity:</span>
+                                    <button class="btn btn-sm btn-outline-secondary cartButton__decrement"
+                                        id="decrementBtn">
                                         <i class="bi bi-dash-lg inc__button__icon"></i>
                                     </button>
                                     <input type="text"
                                         class="qty__amount form-control form-control-sm mx-2 text-center quantity-input"
-                                        value="3">
-                                    <button class="btn btn-sm btn-outline-secondary cartButton__increment">
+                                        value="5" id="quantityInput">
+                                    <button class="btn btn-sm btn-outline-secondary cartButton__increment"
+                                        id="incrementBtn">
                                         <i class="bi bi-plus-lg inc__button__icon"></i>
                                     </button>
                                 </div>
@@ -146,14 +180,16 @@
                                     <span class="cart__mainDiscount">(-23%)</span>
                                 </p>
                                 <div class="d-flex align-items-center quantity__box">
-                                    <span class="me-2 qty__text">Qty:</span>
-                                    <button class="btn btn-sm btn-outline-secondary cartButton__decrement">
+                                    <span class="me-2 qty__text">Quantity:</span>
+                                    <button class="btn btn-sm btn-outline-secondary cartButton__decrement"
+                                        id="decrementBtn">
                                         <i class="bi bi-dash-lg inc__button__icon"></i>
                                     </button>
                                     <input type="text"
                                         class="qty__amount form-control form-control-sm mx-2 text-center quantity-input"
-                                        value="2">
-                                    <button class="btn btn-sm btn-outline-secondary cartButton__increment">
+                                        value="5" id="quantityInput">
+                                    <button class="btn btn-sm btn-outline-secondary cartButton__increment"
+                                        id="incrementBtn">
                                         <i class="bi bi-plus-lg inc__button__icon"></i>
                                     </button>
                                 </div>
@@ -168,20 +204,21 @@
                 <!-- Right Side (Additional Content) -->
                 <div class="col-lg-5 col-12">
                     <div class="price-details">
-                        <div class="coupon__boxCart">
-                            <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                <div class="row">
-                                    <div class="col-9 d-flex align-items-center">
-                                        <img class="coupon__icon" src="assets/img/icons/coupon.png" alt="">
-                                        <div class="apply__couponText">Apply Coupons</div>
-                                    </div>
-                                    <div class="col-3 text-end d-flex align-items-center justify-content-end">
-                                        <img class="chevron__right" src="assets/img/icons/chevron.png" alt="">
-                                    </div>
-                                </div>
-                            </a>
+                        <div class="apply__couponBox">
+                            <!-- Search Widget -->
+                            <div class="search-widget widget-item">
+
+                                <h3 class="apply__couponTitle">Apply Coupon</h3>
+                                <form action="">
+                                    <input type="text" class="coupon__codeInput" placeholder="Enter Coupon Code">
+                                    <button type="submit" class="button__applyCoupon" title="Search"><span
+                                            class="mx-2">Apply</span></button>
+                                </form>
+
+                            </div><!--/Search Widget -->
                         </div>
-                       
+
+
                         <h5 class="text-left mb-4 price__detailsText">Price Details (2 Items)</h5>
 
                         <!-- Price Breakdown -->
@@ -216,42 +253,65 @@
                             <p class="cannot__note">Note: Order cannot be cancelled once packed</p>
                         </div>
 
+
+                        <!-- Payment Options Section -->
+                        <div class="payment__options mt-4 p-3">
+                            <h5 class="mb-3">Select Payment Method</h5>
+                            <div class="form-check d-flex align-items-center payment__option">
+                                <label class="form-check-label d-flex align-items-center flex-grow-1" for="netBanking">
+                                    <img src="assets/img/icons/upi.png" alt="Net Banking" class="payment__icon me-3">
+                                   <span class="payment__optionText"> Net Banking</span>
+                                </label>
+                                <input class="form-check-input ms-auto" type="radio" name="paymentMethod"
+                                    id="netBanking" value="netBanking">
+                            </div>
+                            <div class="form-check d-flex align-items-center payment__option">
+                                <label class="form-check-label d-flex align-items-center flex-grow-1" for="creditDebit">
+                                    <img src="assets/img/icons/creditCard.png" alt="Credit/Debit Card"
+                                        class="payment__icon me-3">
+                                    <span class="payment__optionText">Credit/Debit Card</span>
+                                </label>
+                                <input class="form-check-input ms-auto" type="radio" name="paymentMethod"
+                                    id="creditDebit" value="creditDebit">
+                            </div>
+                            <div class="form-check d-flex align-items-center payment__option">
+                                <label class="form-check-label d-flex align-items-center flex-grow-1" for="upi">
+                                    <img src="assets/img/icons/wallet.png" alt="UPI" class="payment__icon me-3">
+                                    <span class="payment__optionText">Wallet</span>
+                                </label>
+                                <input class="form-check-input ms-auto" type="radio" name="paymentMethod" id="upi"
+                                    value="upi">
+                            </div>
+                            <div class="form-check d-flex align-items-center payment__option">
+                                <label class="form-check-label d-flex align-items-center flex-grow-1" for="upi">
+                                    <img src="assets/img/icons/online-payment.png" alt="UPI" class="payment__icon me-3">
+                                    <span class="payment__optionText"> UPI</span> 
+                                </label>
+                                <input class="form-check-input ms-auto" type="radio" name="paymentMethod" id="upi"
+                                    value="upi">
+                            </div>
+                            <div class="form-check d-flex align-items-center payment__option">
+                                <label class="form-check-label d-flex align-items-center flex-grow-1"
+                                    for="cashOnDelivery">
+                                    <img src="assets/img/icons/cash-on-delivery.png" alt="Cash on Delivery"
+                                        class="payment__icon me-3">
+                                    <span class="payment__optionText"> Cash on Delivery</span>
+                                </label>
+                                <input class="form-check-input ms-auto" type="radio" name="paymentMethod"
+                                    id="cashOnDelivery" value="cashOnDelivery">
+                            </div>
+                        </div>
+
+
                         <!-- Proceed to Payment -->
-                        <div class="text-center mt-4">
-                            <button class="payment__button">PROCEED TO PAYMENT</button>
+                        <div class="text-center mt-4 w-100 payment__button">
+                            <a href="payment-success.html" target="_blank" class="payment__buttonText">PROCEED TO PAYMENT</a>
                         </div>
                     </div>
                 </div>
 
             </div>
         </div>
-
-         <!-- Modal -->
-         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-         aria-hidden="true">
-         <div class="modal-dialog modal-dialog-centered modal-lg">
-             <div class="modal-content">
-                 <div class="modal-header">
-                     <h1 class="modal-title coupons__title fs-5" id="exampleModalLabel">Apply Coupons</h1>
-                   
-                     <button type="button" class="btn-close" data-bs-dismiss="modal"
-                         aria-label="Close"></button>
-                 </div>
-                 <div class="modal-body">
-                    <p class="coupon__availInstruction"><i class="bi bi-chat-square-dots me-2"></i>Minimum amount for avail coupon is 500</p>
-                    <div class="coupon-input-group">
-                        <input type="text" class="form-control shadow-none" placeholder="Enter coupon code">
-                        <button class="btn apply__button">Apply</button>
-                    </div>
-                    
-                 </div>
-                 <div class="modal-footer">
-                     <a href="login.html" class="w-100 coupon__signIn">Sign in/Sign up to avail more coupons
-                    </a>
-                 </div>
-             </div>
-         </div>
-     </div>
 
     </main>
 

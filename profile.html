@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Booksaw</title>
+  <title>Booksaw | Home</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
@@ -35,7 +35,6 @@
   <link href="assets/css/main.css" rel="stylesheet">
   <link href="assets/css/custom-style.css" rel="stylesheet">
   <link href="assets/css/navbar.css" rel="stylesheet">
-
 
 </head>
 
@@ -173,324 +172,24 @@
 
   <main class="main">
 
-    <div class="section__fillGap">
+    <div class="section__fillGap__cart">
 
     </div>
-    <div class="container breadcumb__section">
-      <nav
-        style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
-        aria-label="breadcrumb">
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item breadcrumb__home"><i style="font-weight: 600;" class="bi bi-arrow-left me-2"></i><a
-              href="#" class="breadcrumb__home">Home</a></li>
-          <li class="breadcrumb-item active active__breadcrumb" aria-current="page">Travel</li>
-          <li class="breadcrumb-item active active__breadcrumb" aria-current="page">Great Travel at Desert</li>
-        </ol>
-      </nav>
+
+    <div class="container profileContainer__user">
+        <h5><i class="bi bi-arrow-left me-2"></i>My Account</h5>
+    
+        <div class="profile__innerBox">
+            <div class="profileUser__icon">
+                <!-- Add your icon here -->
+                <i class="bi bi-person-circle"></i> <!-- Example icon -->
+            </div>
+            <a href="login.html" class="profileSignIn__button">
+                Login / Sign Up
+            </a>
+        </div>
     </div>
-
-
-    <!-- Features Section - Home Page -->
-    <section id="features" class="features features__productDetails ">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-3 d-flex align-items-center flex-column productDetails__image features-img-bg" data-aos="zoom-out">
-            <div class="product__image">
-              <img src="assets/img/product-item2.jpg" class="img-fluid product-main-img" alt="about-img">
-            </div>
-          
-            <div class="multiple__prodImage mt-3 mt-lg-4">
-              <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active active__multipleImage">
-                    <img class="multiple__prodImage__single" src="assets/img/products/1.jpg" class="" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="multiple__prodImage__single" src="assets/img/products/1.jpg" class="" alt="...">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="multiple__prodImage__single" src="assets/img/products/1.jpg" class="" alt="...">
-                  </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-lg-6 d-flex align-items-center features-img-bg" data-aos="zoom-out">
-            <div class="product__description">
-              <h4 class="productDetails__productName">Great Travel at Desert</h4>
-              <p class="productDetails__author">Author : Prasanta Kumer</p>
-              <div class="ratings__andLanguagesBox">
-                <h6></h6>
-                <div class="prodDetails__ratings">
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9734;</span>
-                </div>
-                <p class="prodDetails__review">( 2 Reviews)</p>
-
-                <div class="language__prodDetails">
-                  <p class="englishLanguage__prodDetails">ENGLISH</p>
-                  <p class="englishLanguage__prodDetails">HINDI</p>
-                </div>
-              </div>
-
-              <div class="productDetails__featuresBox">
-                <div class="row">
-                   <div class="col-2 me-4">
-                      <img class="prodetails__featureIcon" src="https://bookscape.com/_next/static/media/fast.8a0e010e.svg" alt="">
-                      <p class="prodetails__featureText">Fast Delivery</p>
-                   </div>
-                   <div class="col-2 me-4">
-                    <img class="prodetails__featureIcon"  src="https://bookscape.com/_next/static/media/fast.8a0e010e.svg" alt="">
-                    <p class="prodetails__featureText">Secure Transaction</p>
-                   </div>
-                   <div class="col-2 me-4">
-                    <img class="prodetails__featureIcon"  src="https://bookscape.com/_next/static/media/fast.8a0e010e.svg" alt="">
-                    <p class="prodetails__featureText">Assured Quality</p>
-                   </div>
-                   <div class="col-2 me-4">
-                    <img class="prodetails__featureIcon"  src="https://bookscape.com/_next/static/media/fast.8a0e010e.svg" alt="">
-                    <p class="prodetails__featureText">Cash On Delivery</p>
-                   </div>
-                </div>
-              </div>
-              
-              <div class="pincode__inputWrapper">
-                <input type="text" class="pincode__inputBox" placeholder="Enter Pincode">
-                <button class="pincode__button">Check</button>
-              </div>
-              <p class="pincode__textDeliveryTime">Please enter pincode to check delivery time.</p>
-              <p class="productDetails__codinfo">*COD & Shipping Charges may apply on certain items.
-                Review final details at checkout.</p>
-
-            </div>
-          </div>
-          <div class="col-lg-3 product__detailsRightBox features-img-bg" data-aos="zoom-out">
-            <div class="product__cartPrice">
-              <div class="product__paperBox">
-                <h4>Paperback</h4>
-                <h4><span class="product__paperBox__salePrice">₹223</span><span
-                    class="product__paperBox__discountPrice">₹299</span> <span class="product__paperBox__offer">25%
-                    OFF</span></h4>
-                <p class="inc__tax">(Inclusive of all taxes)</p>
-              </div>
-              <div class="d-flex align-items-center quantity__box">
-                <span class="me-2 qty__text">Quantity:</span>
-                <button class="btn btn-sm btn-outline-secondary cartButton__decrement" id="decrementBtn">
-                  <i class="bi bi-dash-lg inc__button__icon"></i>
-                </button>
-                <input type="text" class="qty__amount form-control form-control-sm mx-2 text-center quantity-input"
-                  value="5" id="quantityInput">
-                <button class="btn btn-sm btn-outline-secondary cartButton__increment" id="incrementBtn">
-                  <i class="bi bi-plus-lg inc__button__icon"></i>
-                </button>
-              </div>
-
-
-              <div class="cartButton__box">
-                <a class="addTo__cartButton" href="cart.html">Add To Cart</a>
-                <a class="buy__nowButton" href="#">Buy Now</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    </section><!-- End Features Section -->
-
-    <div class="product__description">
-      <div class="container">
-        <h5 class="author__aboutHeadline">About the Author</h5>
-        <!-- Nav pills -->
-        <ul class="nav nav-pills product__description__authorContainer">
-          <li class="nav-item">
-            <a class="nav-link active" data-bs-toggle="pill" href="#home">Description</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="pill" href="#menu1">Author</a>
-          </li>
-        </ul>
-
-        <!-- Tab panes -->
-        <div class="tab-content">
-          <div class="tab-pane container active" id="home">
-            <p class="product__description__pillsDesc">
-              When Love Will Not Let You Find A Way Out . The Last Time Daksh Met Aanchal It Was At A Wedding In Dubai.
-              A Brief Spark And Then Both Of Them Move On. It’S Not Necessary To Be Together Even If You Love Each Other
-              To The Moon And Back Right? Wrong.. Not Being With The One You Love Means That There Is Always This
-              Heart-Shaped Hole In Your Lives A Pain That You Can’T Understand A Longing That Refuses To Go Away.. What
-              Happens When The Band-Aid On This Relationship Is Ripped Off And They Are Pushed Together To Finally See
-              What Life For Them Would Be Like? What Happens When They Put Aside Their Ambitions And Emotions To Finally
-              Look At Filling The Hole? . World’S Best Ex-Girlfriend Is A Romance That Will Take The Reader Through The
-              Wringer Of Love.
-            </p>
-          </div>
-          <div class="tab-pane container fade" id="menu1">
-            <p class="product__description__pillsAuthor">Author - Prasanta Kumer</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-
-    <!-- DETAILS SECTION  -->
-    <div class="container">
-      <div class="details__productDescription">
-        <h5>Details</h5>
-        <div class="row">
-          <div class="col-12 col-sm-6 col-md-2">
-            <p class="product__detailsText"><span>ISBN 13</span> - 9789356295698</p>
-          </div>
-          <div class="col-12 col-sm-6 col-md-2">
-            <p class="product__detailsText"><span>Publication Date</span> - 25-10-2024</p>
-          </div>
-          <div class="col-12 col-sm-6 col-md-1">
-            <p class="product__detailsText"><span>Pages</span> - 712</p>
-          </div>
-          <div class="col-12 col-sm-6 col-md-2">
-            <p class="product__detailsText"><span>Weight</span> - 1065 grams</p>
-          </div>
-          <div class="col-12 col-sm-6 col-md-2">
-            <p class="product__detailsText"><span>Dimensions</span> - 153x234x40.18 mm</p>
-          </div>
-          <div class="col-12 col-sm-6 col-md-3">
-            <p class="product__detailsText"><span>Publisher</span> - HarperCollins Publishers India Pvt Ltd</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- REVIEW AND RATINGS SECTION -->
-    <div class="container my-3">
-      <div class="reviews__section">
-        <h5>Ratings & Reviews</h5>
-
-        <!-- Ratings Breakdown -->
-        <div class="ratings__breakdown">
-          <div class="row">
-            <div class="col-lg-2 col-12 my-2">
-              <div class="rating__starsReviewPart">
-                <span class="star">&#9733;</span><span class="no__ofReviews">2 </span> <span
-                  style="color: rgb(103, 103, 102);">Reviews</span>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6 my-2">
-              <div class="rating__stars">
-                <span>5</span> <span class="star">&#9733; <span class="rating-count">(1)</span>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6 my-2">
-              <div class="rating__stars">
-                <span>4</span> <span class="star">&#9733; <span class="rating-count">(21)</span>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6 my-2">
-              <div class="rating__stars">
-                <span>3</span> <span class="star">&#9733; <span class="rating-count">(1)</span>
-              </div>
-            </div>
-            <div class="col-lg-2 col-6 my-2">
-              <div class="rating__stars">
-                <span>2</span> <span class="star">&#9733; <span class="rating-count">(14)</span>
-              </div>
-            </div>
-            <div class="col-lg-2 col-12 my-2">
-              <div class="rating__stars">
-                <span>1</span> <span class="star">&#9733; <span class="rating-count">(11)</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Existing Reviews -->
-          <div class="reviews__list mt-4">
-            <!-- Review 1 -->
-            <div class="review__item">
-              <div class="d-flex align-items-center">
-                <!-- User Profile Icon -->
-                <img src="https://via.placeholder.com/30" alt="User" class="user-pf-icon rounded-circle me-2">
-                <div>
-
-                  <span class="ms-2 review__user">John Doe</span>
-                </div>
-
-              </div>
-              <div class="star-rating">
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9734;</span>
-              </div>
-              <p class="review__text">This is an amazing product! Highly recommend it to anyone who loves books!</p>
-              <p class="review__date">Reviewed on 25-10-2024</p>
-              <!-- Helpful Button -->
-              <button class="btn btn-sm btn-outline-primary helpful-btn mb-4">
-                <i class="bi bi-hand-thumbs-up"></i> Helpful
-              </button>
-            </div>
-
-            <!-- Review 2 -->
-            <div class="review__item">
-              <div class="d-flex align-items-center">
-                <!-- User Profile Icon -->
-                <img src="https://via.placeholder.com/30" alt="User" class="user-pf-icon rounded-circle me-2">
-                <div>
-
-                  <span class="ms-2 review__user">Jane Smith</span>
-                </div>
-              </div>
-              <div class="star-rating">
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9733;</span>
-                <span class="star">&#9734;</span>
-                <span class="star">&#9734;</span>
-              </div>
-              <p class="review__text">Good read, though a bit long. But the content is fantastic!</p>
-              <p class="review__date">Reviewed on 20-10-2024</p>
-              <!-- Helpful Button -->
-              <button class="btn btn-sm btn-outline-primary helpful-btn">
-                <i class="bi bi-hand-thumbs-up"></i> Helpful
-              </button>
-            </div>
-          </div>
-
-          <!-- Add a Review -->
-          <div class="add__review mt-4">
-            <h6>Add Your Review</h6>
-            <form>
-              <div class="d-flex align-items-center mb-3">
-                <label for="rating" class="me-3">Your Rating:</label>
-                <div class="star-rating">
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9733;</span>
-                  <span class="star">&#9734;</span>
-                </div>
-              </div>
-
-              <div class="mb-3">
-                <textarea class="form-control shadow-none" rows="4" placeholder="Write your review here..."></textarea>
-              </div>
-
-              <button type="submit" class="button__submitReview">Submit Review</button>
-            </form>
-          </div>
-        </div>
-      </div>
-
+    
 
   </main>
 
@@ -574,7 +273,6 @@
 
         </div>
 
-
       </div>
     </div>
 
@@ -610,7 +308,7 @@
     <div class="container copyright text-center mt-4">
       <div class="credits">
         <p class="creditss">Designed and Developed by <a href="https://noobcodeacademy.in/">Noob Code Academy</a></p>
-        <p class="copyRightt">Copyright © 2024 by Bookscape India</p>
+        <p class="copyRightt">Copyright © 2024 by Booksaw India</p>
       </div>
     </div>
 

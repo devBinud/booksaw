@@ -33,6 +33,7 @@
 
     <!-- Main CSS File -->
     <link href="assets/css/main.css" rel="stylesheet">
+    <link href="assets/css/navbar.css" rel="stylesheet">
     <link href="assets/css/custom-style.css" rel="stylesheet">
 
 </head>
@@ -47,6 +48,47 @@
         </div>
     </div>
 
+    <div class="topbar__two">
+        <div class="container-fluid" style="max-width: 1568px; width: 100%;">
+            <div class="topbar__navLinks">
+                <div class="topbarNav__left">
+                    <a class="topNavbar__leftLinks" href="">Bestsellers</a>
+                    <a data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        class="topNavbar__leftLinks topNavbar__leftLinksMobileDontShow" href="">New Arrivals</a>
+                    <a class="topNavbar__leftLinks topNavbar__leftLinksMobileDontShow" href="">Artificial
+                        Intelligence</a>
+                    <a class="topNavbar__leftLinks topNavbar__leftLinksMobileDontShow" href="">Influencers Picks</a>
+                </div>
+                <!-- <div class="topbarNav__left__inMobile">
+              <p>Add Pincode</p>
+            </div> -->
+                <div class="topbarNav__right">
+                    <a href="wishlist.html" class="wishlist__topbar">
+                        <img class="topbar__navImage" src="assets/img/icons/heart.png" alt="">
+                        <span class="wishlist__topbarText">Wishlist</span></a>
+
+                    <a href="cart.html" class="cart__topbarr">
+                        <button type="button" class="btn-sm position-relative button__cart">
+                            <i class="bi bi-cart cart__iconMobileView"></i>
+                            <span
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                                style="margin-left: -13px;
+      margin-top: 3px;font-size: 11px;">
+                                4
+                            </span>
+                        </button>
+                        <span class="cart__topbarText">Cart</span>
+                    </a>
+
+                    <a href="profile.html" class="signIn__topbar">
+                        <span class="signIn__topbarText">Sign In</span>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     <header id="header" class="header d-flex align-items-center">
 
         <div class="custom-container position-relative d-flex align-items-center justify-content-between">
@@ -57,19 +99,71 @@
                 <!-- <h1 class="sitename">Booksaw</h1> -->
             </a>
 
-            <div class="cartMobile__view">
-                <a href="#"> <i class="bi bi-heart heart__iconMobileView"></i></a>
-                <!-- <a href="#"> <i class="bi bi-cart cart__iconMobileView"></i></a> -->
-                <button type="button" class="btn-sm position-relative button__cart">
-                    <i class="bi bi-cart cart__iconMobileView"></i>
-                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" style="margin-left: -8px;
-        margin-top: 3px;font-size: 11px;">
-                        4
-                        <span class="visually-hidden">unread messages</span>
-                    </span>
-                </button>
-                <a href="login.html"> <i class="bi bi-person person__iconMobileView"></i></a>
+            <!-- SEARCH CONTAINER -->
+            <div class="search-container">
+                <input type="search" class="search-input" placeholder="Search books,authors,Publishers,ISBN No... ">
+                <i class="search-icon fas fa-search"></i> <!-- You can use any icon library, e.g., FontAwesome -->
             </div>
+
+            <nav id="navmenu" class="navmenu">
+                <ul>
+                    <li><a href="#hero" class="active">Home<br></a></li>
+                    <li class="dropdown"><a href="#"><span>Academics</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li><a href="#">Dropdown 1</a></li>
+                            <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i
+                                        class="bi bi-chevron-down toggle-dropdown"></i></a>
+                                <ul>
+                                    <li><a href="#">Deep Dropdown 1</a></li>
+                                    <li><a href="#">Deep Dropdown 2</a></li>
+                                    <li><a href="#">Deep Dropdown 3</a></li>
+                                    <li><a href="#">Deep Dropdown 4</a></li>
+                                    <li><a href="#">Deep Dropdown 5</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dropdown 2</a></li>
+                            <li><a href="#">Dropdown 3</a></li>
+                            <li><a href="#">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="listing-dropdown"><a href="#"><span>Fiction</span> <i
+                                class="bi bi-chevron-down toggle-dropdown"></i></a>
+                        <ul>
+                            <li>
+                                <a href="#">Column 1 link 1</a>
+                                <a href="#">Column 1 link 2</a>
+                                <a href="#">Column 1 link 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Column 2 link 1</a>
+                                <a href="#">Column 2 link 2</a>
+                                <a href="#">Column 3 link 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Column 3 link 1</a>
+                                <a href="#">Column 3 link 2</a>
+                                <a href="#">Column 3 link 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Column 4 link 1</a>
+                                <a href="#">Column 4 link 2</a>
+                                <a href="#">Column 4 link 3</a>
+                            </li>
+                            <li>
+                                <a href="#">Column 5 link 1</a>
+                                <a href="#">Column 5 link 2</a>
+                                <a href="#">Column 5 link 3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#" class="navbar__offersLinks">Offers</a></li>
+
+                </ul>
+                <i class="mobile-nav-toggle d-xl-none bi bi-list" style="margin-top: -14px;"></i>
+
+            </nav>
 
         </div>
     </header>
@@ -260,7 +354,7 @@
                             <div class="form-check d-flex align-items-center payment__option">
                                 <label class="form-check-label d-flex align-items-center flex-grow-1" for="netBanking">
                                     <img src="assets/img/icons/upi.png" alt="Net Banking" class="payment__icon me-3">
-                                   <span class="payment__optionText"> Net Banking</span>
+                                    <span class="payment__optionText"> Net Banking</span>
                                 </label>
                                 <input class="form-check-input ms-auto" type="radio" name="paymentMethod"
                                     id="netBanking" value="netBanking">
@@ -285,7 +379,7 @@
                             <div class="form-check d-flex align-items-center payment__option">
                                 <label class="form-check-label d-flex align-items-center flex-grow-1" for="upi">
                                     <img src="assets/img/icons/online-payment.png" alt="UPI" class="payment__icon me-3">
-                                    <span class="payment__optionText"> UPI</span> 
+                                    <span class="payment__optionText"> UPI</span>
                                 </label>
                                 <input class="form-check-input ms-auto" type="radio" name="paymentMethod" id="upi"
                                     value="upi">
@@ -305,7 +399,8 @@
 
                         <!-- Proceed to Payment -->
                         <div class="text-center mt-4 w-100 payment__button">
-                            <a href="payment-success.html" target="_blank" class="payment__buttonText">PROCEED TO PAYMENT</a>
+                            <a href="payment-success.html" target="_blank" class="payment__buttonText">PROCEED TO
+                                PAYMENT</a>
                         </div>
                     </div>
                 </div>

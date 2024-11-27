@@ -79,6 +79,7 @@
 
           <a href="profile.html" class="signIn__topbar">
             <span class="signIn__topbarText">Sign In</span>
+            <span><img class="user__icon" src="assets/img/icons/user.png" alt=""></span>
           </a>
 
         </div>
@@ -92,14 +93,23 @@
 
       <a href="index.html" class="logo d-flex align-items-center mr-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
-        <img src="assets/img/main-logo.png" alt="">
+        <img src="assets/img/main-logo.png" alt="logo">
         <!-- <h1 class="sitename">Booksaw</h1> -->
       </a>
 
-      <!-- SEARCH CONTAINER -->
-      <div class="search-container">
-        <input type="search" class="search-input" placeholder="Search books,authors,Publishers,ISBN No... ">
-        <i class="search-icon fas fa-search"></i> <!-- You can use any icon library, e.g., FontAwesome -->
+      <div class="search-container position-relative">
+        <input type="search" class="search-input form-control" id="searchInput" placeholder="Search books, authors, Publishers, ISBN No...">
+        <i class="search-icon fas fa-search position-absolute top-50 end-0 translate-middle-y px-3"></i>
+      
+        <!-- Search Suggestions Dropdown -->
+        <div class="search-dropdown" id="searchDropdown" style="display: none; position: absolute; width: 100%; z-index: 10;">
+          <ul class="list-group">
+            <li class="list-group-item">Books</li>
+            <li class="list-group-item">Authors</li>
+            <li class="list-group-item">Publishers</li>
+            <li class="list-group-item">ISBN No.</li>
+          </ul>
+        </div>
       </div>
 
       <nav id="navmenu" class="navmenu">
@@ -165,10 +175,24 @@
   </header>
 
 
-  <div class="search-container-two">
+  <!-- <div class="search-container-two">
     <input type="search" class="search-input-two" placeholder="Search books,authors,Publishers,ISBN No...">
+    <i class="search-icon-two fas fa-search"></i>
+  </div> -->
+
+  <div class="search-container-two dropdown">
+    <input type="search" class="search-input-two form-control"
+      placeholder="Search books, authors, Publishers, ISBN No..." id="searchBox" data-bs-toggle="dropdown"
+      aria-expanded="false">
     <i class="search-icon-two fas fa-search"></i> <!-- Using FontAwesome icon -->
+    <ul class="dropdown-menu w-100" aria-labelledby="searchBox">
+      <li><a class="dropdown-item" href="#">Book: Harry Potter</a></li>
+      <li><a class="dropdown-item" href="#">Author: J.K. Rowling</a></li>
+      <li><a class="dropdown-item" href="#">Publisher: Bloomsbury</a></li>
+      <li><a class="dropdown-item" href="#">ISBN: 978-0439139601</a></li>
+    </ul>
   </div>
+
 
   <main class="main">
 
@@ -249,13 +273,7 @@
         </div>
 
         <div class="col-lg-4 col-md-12">
-          <h4>Download our App</h4>
-          <div class="footer__logo mb-3">
-            <img style="border: 1px solid #fff;border-radius: 10px;" src="assets/img/google-play.jpg" class="img-fluid"
-              alt="">
-            <img style="border: 1px solid #fff;border-radius: 10px;" src="assets/img/app-store.jpg"
-              class="img-fluid ms-4" alt="">
-          </div>
+          <h4>CONNECT WITH US</h4>
           <div class="footer__paraBox">
             <p class="footer-paragraph">
               Address : Bonda , Near Bonda Bazar, Narengi<br>Guwahati, Assam 781026
@@ -264,11 +282,9 @@
             <p class="footer-paragraph" style="margin-top: -11px;">Email : booksaw.support@gmail.com</p>
           </div>
           <div class="social-links mt-3">
-            <a href="#" class="social_singleLinks"><i class="bi bi-facebook"></i></a>
             <a href="#" class="social_singleLinks"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="social_singleLinks"><i class="  bi bi-twitter"></i></a>
+            <a href="#" class="social_singleLinks"><i class="bi bi-facebook"></i></a>
             <a href="#" class="social_singleLinks"><i class="  bi bi-youtube"></i></a>
-            <a href="#" class="social_singleLinks"><i class=" bi bi-linkedin"></i></a>
           </div>
 
         </div>
@@ -276,34 +292,6 @@
       </div>
     </div>
 
-    <div class="container footer__bottom__one">
-      <div class="row">
-        <div class="col-md-3 col-6">
-          <div class="footer__bottom__smallBox">
-            <img src="https://bookscape.com/_next/static/media/geniue_books.38fcecb3.svg" alt="">
-            <h6>Millions of books</h6>
-          </div>
-        </div>
-        <div class="col-md-3 col-6">
-          <div class="footer__bottom__smallBox">
-            <img src="https://bookscape.com/_next/static/media/geniue_books.38fcecb3.svg" alt="">
-            <h6>Millions of books</h6>
-          </div>
-        </div>
-        <div class="col-md-3 col-6">
-          <div class="footer__bottom__smallBox">
-            <img src="https://bookscape.com/_next/static/media/geniue_books.38fcecb3.svg" alt="">
-            <h6>Millions of books</h6>
-          </div>
-        </div>
-        <div class="col-md-3 col-6">
-          <div class="footer__bottom__smallBox">
-            <img src="https://bookscape.com/_next/static/media/geniue_books.38fcecb3.svg" alt="">
-            <h6>Millions of books</h6>
-          </div>
-        </div>
-      </div>
-    </div>
 
     <div class="container copyright text-center mt-4">
       <div class="credits">

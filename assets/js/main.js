@@ -293,3 +293,106 @@ function showSearchListTwo() {
         document.getElementById("searchListTwo").style.display = "none";
     }, 200); // Timeout to allow clicking on list items
   }
+
+
+  // Hide the COD notice initially
+  document.addEventListener('DOMContentLoaded', function () {
+      document.getElementById('codNotice').style.display = 'none';
+  });
+
+  // Show/hide the COD notice based on selection
+  document.querySelectorAll('input[name="paymentMethod"]').forEach((input) => {
+      input.addEventListener('change', function () {
+          const codNotice = document.getElementById('codNotice');
+          // Show only when "cashOnDelivery" is selected
+          codNotice.style.display = this.value === 'cashOnDelivery' ? 'block' : 'none';
+      });
+  });
+
+
+
+
+  
+
+  function slide(direction) {
+    const scrollContainer = document.querySelector('.horizontal-scroll');
+    const scrollAmount = 300; // Adjust the number for smoother or faster scrolling
+    
+    if (direction === 1) {
+      // Slide to the right (next)
+      scrollContainer.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth',
+      });
+    } else if (direction === -1) {
+      // Slide to the left (prev)
+      scrollContainer.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  }
+  
+  function slideBestSellers(direction) {
+    const scrollContainer = document.querySelector('.bestSellers__home .horizontal-scroll');
+    const scrollAmount = 300; // Adjust this for smoother or faster scrolling
+    
+    if (direction === 1) {
+      // Slide to the right (next)
+      scrollContainer.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth',
+      });
+    } else if (direction === -1) {
+      // Slide to the left (prev)
+      scrollContainer.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  }
+  
+
+  function slideShortSelfHelp(direction) {
+    const scrollContainer = document.querySelector('.shortSelfHelp__books .horizontal-scroll');
+    const scrollAmount = 300; // Adjust this for smoother or faster scrolling
+    
+    if (direction === 1) {
+      // Slide to the right (next)
+      scrollContainer.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth',
+      });
+    } else if (direction === -1) {
+      // Slide to the left (prev)
+      scrollContainer.scrollBy({
+        left: -scrollAmount,
+        behavior: 'smooth',
+      });
+    }
+  }
+  
+
+
+  // JavaScript to handle search input and toggle dropdown
+document.getElementById('searchInput').addEventListener('input', function() {
+  var input = this.value;
+  var dropdown = document.getElementById('searchDropdown');
+
+  // Show the dropdown if there's input
+  if (input.length > 0) {
+    dropdown.style.display = 'block';
+  } else {
+    dropdown.style.display = 'none';
+  }
+});
+
+// Hide dropdown when clicking outside the search container
+document.addEventListener('click', function(e) {
+  var searchContainer = document.querySelector('.search-container');
+  if (!searchContainer.contains(e.target)) {
+    document.getElementById('searchDropdown').style.display = 'none';
+  }
+});
+
+  

@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Booksaw | Shopping Cart</title>
+    <title>Booksaw | Wishlist</title>
     <meta name="description" content="">
     <meta name="keywords" content="">
 
@@ -20,8 +20,7 @@
         rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900"
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i,900"
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
@@ -35,6 +34,7 @@
     <link href="assets/css/main.css" rel="stylesheet">
     <link href="assets/css/navbar.css" rel="stylesheet">
     <link href="assets/css/custom-style.css" rel="stylesheet">
+    <link href="assets/css/wishlist.css" rel="stylesheet">
 
 </head>
 
@@ -79,6 +79,7 @@
     
               <a href="profile.html" class="signIn__topbar">
                 <span class="signIn__topbarText">Sign In</span>
+                <span><img class="user__icon" src="assets/img/icons/user.png" alt=""></span>
               </a>
     
             </div>
@@ -92,14 +93,23 @@
     
           <a href="index.html" class="logo d-flex align-items-center mr-auto">
             <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img src="assets/img/main-logo.png" alt="">
+            <img src="assets/img/main-logo.png" alt="logo">
             <!-- <h1 class="sitename">Booksaw</h1> -->
           </a>
     
-          <!-- SEARCH CONTAINER -->
-          <div class="search-container">
-            <input type="search" class="search-input" placeholder="Search books,authors,Publishers,ISBN No... ">
-            <i class="search-icon fas fa-search"></i> <!-- You can use any icon library, e.g., FontAwesome -->
+          <div class="search-container position-relative">
+            <input type="search" class="search-input form-control" id="searchInput" placeholder="Search books, authors, Publishers, ISBN No...">
+            <i class="search-icon fas fa-search position-absolute top-50 end-0 translate-middle-y px-3"></i>
+          
+            <!-- Search Suggestions Dropdown -->
+            <div class="search-dropdown" id="searchDropdown" style="display: none; position: absolute; width: 100%; z-index: 10;">
+              <ul class="list-group">
+                <li class="list-group-item">Books</li>
+                <li class="list-group-item">Authors</li>
+                <li class="list-group-item">Publishers</li>
+                <li class="list-group-item">ISBN No.</li>
+              </ul>
+            </div>
           </div>
     
           <nav id="navmenu" class="navmenu">
@@ -165,10 +175,24 @@
       </header>
     
     
-      <div class="search-container-two">
+      <!-- <div class="search-container-two">
         <input type="search" class="search-input-two" placeholder="Search books,authors,Publishers,ISBN No...">
+        <i class="search-icon-two fas fa-search"></i>
+      </div> -->
+    
+      <div class="search-container-two dropdown">
+        <input type="search" class="search-input-two form-control"
+          placeholder="Search books, authors, Publishers, ISBN No..." id="searchBox" data-bs-toggle="dropdown"
+          aria-expanded="false">
         <i class="search-icon-two fas fa-search"></i> <!-- Using FontAwesome icon -->
+        <ul class="dropdown-menu w-100" aria-labelledby="searchBox">
+          <li><a class="dropdown-item" href="#">Book: Harry Potter</a></li>
+          <li><a class="dropdown-item" href="#">Author: J.K. Rowling</a></li>
+          <li><a class="dropdown-item" href="#">Publisher: Bloomsbury</a></li>
+          <li><a class="dropdown-item" href="#">ISBN: 978-0439139601</a></li>
+        </ul>
       </div>
+    
 
     <main class="main">
 
@@ -176,9 +200,29 @@
 
         </div>
 
-        <!-- Wishlist Section  -->
-        <div class="container">
-            <h5 style="margin-top: 133px;">Wishlist Section</h5>
+        <!-- Cart Section -->
+        <div class="container my-4 cart__container">
+            <div class="row">
+                <div class="container breadcumb__section">
+                    <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);"
+                        aria-label="breadcrumb">
+                        <ol class="breadcrumb mt-2">
+                            <li class="breadcrumb-item breadcrumb__home"><i style="font-weight: 600;"
+                                    class="bi bi-arrow-left me-2"></i><a href="#" class="breadcrumb__home">Home</a></li>
+                            <li class="breadcrumb-item active active__breadcrumb" aria-current="page">Readlist</li>
+                        </ol>
+                    </nav>
+                </div>
+                
+
+                <div class="wishlist__container">
+                    <img style="width: 100%;height:40vh" src="https://bookscape.com/_next/static/media/non-logged-bookshelf.a5668ea3.svg" alt="">
+                </div>
+                <div class="button__wishlist">
+                    <a href="login.html" class="login__buttonWishlist">Login Now</a>
+                </div>
+
+            </div>
         </div>
 
     </main>

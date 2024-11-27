@@ -1,10 +1,93 @@
+.button__wishlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+ 
+}
+.button__wishlist .login__buttonWishlist{
+    padding: 7px 20px;
+    border: 1px solid #ccc;
+    background-color:#ee5c5c;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #ffff;
+    font-size: 14px;
+}
+.login__buttonWishlist:hover{
+   color: #fff!important;
+   background-color: #d04e4e;
+}
+.prev-btn, .next-btn {
+    width: 40px; /* Set width of button */
+    height: 40px; /* Set height of button */
+    padding: 10px;
+    display: flex; /* Use flexbox to align content */
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    border-radius: 50%; /* Make the button rounded */
+    background-color: #f1f1f1; /* Background color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background and scale */
+}
+.prev-btn{
+    margin-right: 13px;
+}
+.prev__nextButton{
+    margin-top: -10px;
+    padding-bottom: 10px;
+    /* background-color: #28a745; */
+}
+.prev-btn:hover, .next-btn:hover {
+    background-color: #f7d4ca; /* Change to a blue color on hover */
+    transform: scale(1); /* Slightly enlarge the button on hover */
+}
+
+.prev-btn:disabled, .next-btn:disabled {
+    background-color: #dcdcdc; /* Light grey background when disabled */
+    cursor: not-allowed; /* Change cursor to indicate that the button is disabled */
+    transform: scale(1); /* Keep size normal when disabled */
+}
+
+.prev-btn i, .next-btn i {
+    color: #000; /* Icon color */
+    font-size: 16px; /* Set icon size */
+}
+
+.prev-btn:disabled i, .next-btn:disabled i {
+    color: #a9a9a9; /* Light grey icon color when disabled */
+}
+
+
+.user__icon{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 9px;
+    margin-left: -10px;
+    display: none;
+}
+.codNoticeText{
+    display: block;
+    color: #757474;
+    font-size: 13px;
+    margin-top: 10px;
+    font-weight: 600;
+    background: rgb(233, 197, 170);
+    padding: 4px 20px;
+    border-radius:5px
+}
+.user__icon{
+    width: 30px;
+    height: 30px;
+}
 .bestSellers__home .horizontal-scroll {
     display: flex;
     gap: 15px; /* Space between cards */
     overflow-x: auto;
     padding: 20px 0;
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #d04e4e #f1f1f1; /* For Firefox */
+    scrollbar-width: none; /* For Firefox */
+    scrollbar-color: none; /* For Firefox */
 }
 
 .bestSellers__home .horizontal-scroll::-webkit-scrollbar {
@@ -47,30 +130,21 @@
     color: #4a4141;
     font-size: 14px;
 }
-/* NEW ARRIVALS SECTION  */
-.newArrivals__home{
+/* NEW ARRIVALS SECTION */
+.newArrivals__home {
     margin-top: -30px;
 }
+
 .newArrivals__home .horizontal-scroll {
     display: flex;
     gap: 15px; /* Space between cards */
     overflow-x: auto;
-    padding: 20px 0;
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #d04e4e #f1f1f1; /* For Firefox */
+    padding: 6px 0;
+    scrollbar-width: none; /* For Firefox */
 }
 
 .newArrivals__home .horizontal-scroll::-webkit-scrollbar {
-    height: 8px; /* Scrollbar height */
-}
-
-.newArrivals__home .horizontal-scroll::-webkit-scrollbar-thumb {
-    background-color: #d04e4e; /* Scrollbar thumb color */
-    border-radius: 10px;
-}
-
-.newArrivals__home .horizontal-scroll::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Scrollbar track color */
+    display: none; /* For WebKit browsers (Chrome, Safari, etc.) */
 }
 
 .newArrivals__home .card {
@@ -83,54 +157,52 @@
 .newArrivals__home .card .card-body {
     padding: 10px;
 }
-.newArrivals__home .card .card-body{
-    padding-left: 13px!important;
+
+.newArrivals__home .card .card-body {
+    padding-left: 13px !important;
 }
+
 .newArrivals__home .card .card-body .card-title {
     color: #444;
     font-size: 14px;
 }
+
 .newArrivals__home .card .card-body .card-title:hover {
     color: #4a4141;
     font-size: 14px;
 }
+
 .newArrivals__home .card-buttons {
     display: flex;
     justify-content: left;
     padding: 10px;
 }
 /* SHORT SELF HELP BOOK SECTION  */
-
 .shortSelfHelp__books .horizontal-scroll {
     display: flex;
     gap: 15px; /* Space between cards */
     overflow-x: auto;
     padding: 20px 0;
-    scrollbar-width: thin; /* For Firefox */
-    scrollbar-color: #d04e4e #f1f1f1; /* For Firefox */
+    -ms-overflow-style: none;  /* For Internet Explorer and Edge */
+    scrollbar-width: none;  /* For Firefox */
 }
+
+.shortSelfHelp__books .horizontal-scroll::-webkit-scrollbar {
+    display: none;  /* Hide the scrollbar */
+}
+
 .shortSelfHelp__books .card .card-body{
     padding-left: 13px!important;
 }
+
 .shortSelfHelp__books .card .card-body .card-title {
     color: #444;
     font-size: 14px;
 }
+
 .shortSelfHelp__books .card .card-body .card-title:hover {
     color: #4a4141;
     font-size: 14px;
-}
-.shortSelfHelp__books .horizontal-scroll::-webkit-scrollbar {
-    height: 8px; /* Scrollbar height */
-}
-
-.shortSelfHelp__books .horizontal-scroll::-webkit-scrollbar-thumb {
-    background-color: #d04e4e; /* Scrollbar thumb color */
-    border-radius: 10px;
-}
-
-.shortSelfHelp__books .horizontal-scroll::-webkit-scrollbar-track {
-    background-color: #f1f1f1; /* Scrollbar track color */
 }
 
 .shortSelfHelp__books .card {
@@ -1471,5 +1543,23 @@
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 1px;
+}
+.signIn__topbarText{
+    display: none;
+}
+.user__icon{
+    width: 22px;
+    height: 22px;
+    margin-bottom: 9px;
+    margin-left: -10px;
+    display: inline-block;
+}
+.topbarNav__right{
+    margin-right: -15px;
+    margin-top: 4px;
+}
+
+.prev__nextButton{
+    display: none!important;
 }
 }

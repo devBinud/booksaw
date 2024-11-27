@@ -80,9 +80,6 @@ h6 {
   font-family: var(--heading-font);
 }
 
-.footer__paraBox{
-  padding-top: 15px;
-}
 #footer .footer-paragraph{
   color: #d7d7d7;
   font-size: 13px;

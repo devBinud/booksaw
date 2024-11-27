@@ -97,21 +97,10 @@
         <!-- <h1 class="sitename">Booksaw</h1> -->
       </a>
 
-      <div class="search-container position-relative">
-        <input type="search" class="search-input form-control" id="searchInput"
-          placeholder="Search books, authors, Publishers, ISBN No...">
-        <i class="search-icon fas fa-search position-absolute top-50 end-0 translate-middle-y px-3"></i>
-
-        <!-- Search Suggestions Dropdown -->
-        <div class="search-dropdown" id="searchDropdown"
-          style="display: none; position: absolute; width: 100%; z-index: 10;">
-          <ul class="list-group">
-            <li class="list-group-item">Books</li>
-            <li class="list-group-item">Authors</li>
-            <li class="list-group-item">Publishers</li>
-            <li class="list-group-item">ISBN No.</li>
-          </ul>
-        </div>
+      <!-- SEARCH CONTAINER -->
+      <div class="search-container">
+        <input type="search" class="search-input" placeholder="Search books,authors,Publishers,ISBN No... ">
+        <i class="search-icon fas fa-search"></i> <!-- You can use any icon library, e.g., FontAwesome -->
       </div>
 
       <nav id="navmenu" class="navmenu">
@@ -426,269 +415,292 @@
     </section>
 
 
-    <!-- ======= Best Sellers Section starts ======= -->
-    <div class="bestSellers__home" style="margin-top: -30px;">
+    <!-- ======= New Arrivals Section starts ======= -->
+    <section class="newArrivals__home">
       <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-11">
-            <h3 class="title__ofHomepage mb-0">Best Sellers</h3>
+        <h3 class="title__ofHomepage mb-lg-2 mb-0">New Arrivals</h3>
+
+        <div class="horizontal-scroll">
+          <!-- Card 1 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+            </div>
           </div>
 
-          <div class="col-lg-1 d-flex prev__nextButton mb-lg-2 mb-0">
-            <!-- Prev Button -->
-            <button class="prev-btn" onclick="slideBestSellers(-1)">
-              <i class="bi bi-arrow-left"></i>
-            </button>
-
-            <!-- Next Button -->
-            <button class="next-btn" onclick="slideBestSellers(1)">
-              <i class="bi bi-arrow-right"></i>
-            </button>
+          <!-- Card 2 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+            </div>
           </div>
-        </div>
 
-        <div class="horizontal-scroll-wrapper">
-
-          <div class="horizontal-scroll">
-            <!-- Card 1 -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 1</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹499</p>
-                    <p class="regular__price">₹499</p>
-                    <p class="discount__price">(-10%)</p>
-                  </div>
+          <!-- Card 3 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
                 </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
               </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
             </div>
+          </div>
 
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
+          <!-- Card 4 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
                 </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
               </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
             </div>
+          </div>
 
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
+          <!-- Card 5 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
                 </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
               </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
             </div>
+          </div>
 
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
+          <!-- Card 6 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
                 </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
               </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
             </div>
+          </div>
 
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
+          <!-- Card 7 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">7 No Product of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
                 </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
               </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
             </div>
-
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-            <!-- Add more cards as needed... -->
-
           </div>
 
         </div>
 
       </div>
-    </div>
-    <!-- ======= Best Sellers Section ends ======= -->
+    </section>
 
+
+    <!-- ======= Our BestSeller Books Section starts ======= -->
+    <div class="bestSellers__home">
+      <div class="container" data-aos="fade-down">
+        <h3 class="title__ofHomepage mb-lg-2 mb-0">Our BestSeller Books</h3>
+
+        <div class="horizontal-scroll">
+          <!-- Card 1 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+            </div>
+          </div>
+
+
+          <!-- Card 3 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+            </div>
+          </div>
+
+
+          <!-- Card 4 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     <!-- ======= Editors Picks Services Section ======= -->
-    <section id="featured-services" class="featured-services" style="margin-top: -40px;">
+    <section id="featured-services" class="featured-services" style="margin-top: -30px;">
       <div class="container" data-aos="fade-up">
         <h3 class="title__ofHomepage mb-3">Editors Picks</h3>
         <div class="row">
@@ -752,266 +764,138 @@
     </section><!-- End Features Section -->
 
 
-    <!-- ======= Best Sellers Section starts ======= -->
+    <!-- ======= Short Self Help Section starts ======= -->
     <div class="shortSelfHelp__books" style="margin-top: -30px;">
       <div class="container" data-aos="fade-up">
-        <div class="row">
-          <div class="col-lg-11">
-            <h3 class="title__ofHomepage mb-0">Best Sellers</h3>
+        <h3 class="title__ofHomepage">Short Self-Help Books</h3>
+
+        <div class="horizontal-scroll">
+          <!-- Card 1 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+            </div>
           </div>
 
-          <div class="col-lg-1 d-flex prev__nextButton mb-lg-2 mb-0">
-            <!-- Prev Button -->
-            <button class="prev-btn" onclick="slideShortSelfHelp(-1)">
-              <i class="bi bi-arrow-left"></i>
-            </button>
-
-            <!-- Next Button -->
-            <button class="next-btn" onclick="slideShortSelfHelp(1)">
-              <i class="bi bi-arrow-right"></i>
-            </button>
+          <!-- Card 2 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+            </div>
           </div>
-        </div>
 
-        <div class="horizontal-scroll-wrapper">
-
-          <div class="horizontal-scroll">
-            <!-- Card 1 -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 1</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹499</p>
-                    <p class="regular__price">₹499</p>
-                    <p class="discount__price">(-10%)</p>
-                  </div>
+          <!-- Card 3 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
                 </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
               </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
             </div>
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-            <!-- More cards here... -->
-            <div class="card">
-              <a href="product-details.html"><img src="assets/img/product-item1.jpg" class="card-img-top" alt="..."></a>
-              <a href="product-details.html">
-                <div class="card-body">
-                  <h5 class="card-title">Best Seller Product 2</h5>
-                  <h5 class="card-author">Brand Name</h5>
-                  <div class="price__box d-flex">
-                    <p class="sale__price">₹599</p>
-                    <p class="regular__price">₹599</p>
-                    <p class="discount__price">(-15%)</p>
-                  </div>
-                </div>
-              </a>
-              <div class="card-buttons">
-                <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
-                <a href="cart.html" class="addToCart__buttonText">View Cart</a>
-              </div>
-            </div>
-
-            <!-- Add more cards as needed... -->
-
           </div>
+
+
+          <!-- Card 4 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="card">
+            <a href="product-details.html"><img src="assets/img/product-item2.jpg" class="card-img-top" alt="..."></a>
+            <a href="product-details.html">
+              <div class="card-body">
+                <h5 class="card-title">Simple way of peace...</h5>
+                <h5 class="card-author">Roeds Corps</h5>
+                <div class="price__box d-flex">
+                  <p class="sale__price">₹349</p>
+                  <p class="regular__price">₹349</p>
+                  <p class="discount__price">(-20%)</p>
+                </div>
+              </div>
+            </a>
+            <div class="card-buttons">
+              <a href="#" class="wishlist__icon"><i class="bi bi-heart"></i></a>
+              <a href="cart.html" class="addToCart__buttonText">View Cart</a>
+            </div>
+          </div>
+
 
         </div>
 
       </div>
     </div>
-    <!-- ======= Best Sellers Section ends ======= -->
-
 
     <!-- ======= Top Exam Prep Section ======= -->
     <section id="featured-services" class="featured-services" style="margin-top: -35px;">

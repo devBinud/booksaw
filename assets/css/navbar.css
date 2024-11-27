@@ -162,6 +162,9 @@
         margin-top: -11px;
         justify-content: space-between;
     }
+    .topNavbar__leftLinks{
+        display:none;
+    }
     .profileContainer__user{
         margin-top: 110px;
         margin-bottom: 10px;
@@ -204,5 +207,32 @@
         box-shadow:none;
         border-radius: 0px;
     }
+
+    .signIn__topbar {
+        color: #fff;
+        /* padding: 7px 18px; */
+        font-weight: 600;
+        font-size: 14px;
+        align-items: center;
+        text-align: center;
+        background-color: white !important;
+        border-radius: 6px;
+        text-transform: capitalize;
+        letter-spacing: 0.5px;
+        /* border-left: 1px solid #ddd; */
+        /* box-shadow: 0 0 1px rgba(208, 78, 78, 0.8); */
+        transition: all 0.3s ease;
+  }
+  .cart__topbarr {
+    color: #444;
+    font-weight: 600;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+    color: #444;
+    text-transform: capitalize;
+    border-left: 1px solid #ddd;
+    margin-right: 0;
+  }
     
 }
